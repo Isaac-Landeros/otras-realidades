@@ -1,0 +1,73 @@
+/* ==========================================================================
+   OTRAS REALIDADES · TEMA VISUAL
+   --------------------------------------------------------------------------
+   Este es el ÚNICO archivo que hay que editar para cambiar colores y fuentes
+   de toda la serie. Los sketches de p5.js leen estas variables al dibujar,
+   así que el lienzo, los textos y las imágenes exportadas cambian a la vez.
+
+   Para cambiar de tipografía:
+     1. Copia los archivos .woff2 nuevos en shared/fonts/
+     2. Cambia las reglas @font-face de abajo
+     3. Cambia --f-display / --f-body / --f-mono
+   (Alternativa rápida: sustituye los @font-face por un <link> de Google
+    Fonts en cada index.html y escribe aquí los nombres de las familias.)
+   ========================================================================== */
+
+/* ---------- Fuentes ---------- */
+@font-face{
+  font-family:"Archivo";
+  src:url("../fonts/archivo-var.woff2") format("woff2");
+  font-weight:100 900; font-stretch:62% 125%; font-display:swap;
+}
+@font-face{
+  font-family:"IBM Plex Mono";
+  src:url("../fonts/ibm-plex-mono-400.woff2") format("woff2");
+  font-weight:400; font-display:swap;
+}
+@font-face{
+  font-family:"IBM Plex Mono";
+  src:url("../fonts/ibm-plex-mono-500.woff2") format("woff2");
+  font-weight:500; font-display:swap;
+}
+
+:root{
+  /* Familias */
+  --f-display:"Archivo", "Helvetica Neue", Arial, sans-serif;   /* títulos y cifras grandes */
+  --f-body:"Archivo", "Helvetica Neue", Arial, sans-serif;      /* texto corrido */
+  --f-mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;     /* datos, etiquetas */
+
+  /* Carácter de los títulos (anchura y peso de la fuente variable) */
+  --display-stretch:72%;
+  --display-weight:800;
+
+  /* ---------- Colores · tema claro ---------- */
+  --c-paper:#eef0ec;   /* fondo */
+  --c-panel:#e2e7e1;   /* superficies, selección */
+  --c-ink:#1c2420;     /* texto y contornos */
+  --c-muted:#5a6862;   /* texto secundario */
+  --c-rule:#c6cdc5;    /* líneas finas */
+  --c-home:#bf5419;    /* TU país: acento principal */
+  --c-dot:#1c2420;     /* puntos de población del otro país */
+  --c-on-home:#ffffff; /* texto sobre el acento */
+
+  /* Uso del suelo (ejercicio 02) */
+  --c-crop:#e3d49b;    /* tierra cultivable */
+  --c-pasture:#e6e6cf; /* pastos */
+  --c-forest:#c8d6c6;  /* bosque */
+}
+
+/* ---------- Colores · tema oscuro ---------- */
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --c-paper:#131816; --c-panel:#1b2220; --c-ink:#e4eae5; --c-muted:#91a098;
+    --c-rule:#2d3733; --c-home:#f0894a; --c-dot:#dbe4de; --c-on-home:#131816;
+    --c-crop:#4d4527; --c-pasture:#2f3427; --c-forest:#22322b;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --c-paper:#131816; --c-panel:#1b2220; --c-ink:#e4eae5; --c-muted:#91a098;
+  --c-rule:#2d3733; --c-home:#f0894a; --c-dot:#dbe4de; --c-on-home:#131816;
+  --c-crop:#4d4527; --c-pasture:#2f3427; --c-forest:#22322b;
+  color-scheme:dark;
+}

@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Territorio y gente · Otras realidades</title>
+<meta name="description" content="¿Cuánto espacio le toca a cada persona? Compara el territorio y la población de tu país con cualquier otro del mundo.">
+<!-- Vista previa al compartir el enlace (rellenar al publicar) -->
+<meta property="og:title" content="¿Cuántas veces cabe tu país en otro?">
+<meta property="og:description" content="Territorio y gente · Otras realidades, ejercicio 01">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://isaac-landeros.github.io/otras-realidades/01-territorio/">
+<meta property="og:image" content="https://isaac-landeros.github.io/otras-realidades/01-territorio/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://isaac-landeros.github.io/otras-realidades/01-territorio/">
+<link rel="preload" href="../shared/fonts/archivo-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../shared/css/theme.css">
+<link rel="stylesheet" href="../shared/css/base.css">
+</head>
+<body>
+
+<!-- ================= MODO INTERACTIVO ================= -->
+<div class="app" id="app">
+  <header class="bar">
+    <div class="brand"><a class="back" href="https://www.isaaclanderos.com/research" title="Volver a Research">Isaac Landeros · Research</a> / <b>Otras realidades</b> · 01 Territorio y gente</div>
+    <nav class="steps" aria-label="Pasos">
+      <button data-go="home">1 Tu país</button>
+      <button data-go="guess">2 Predice</button>
+      <button data-go="reveal">3 Compara</button>
+      <button data-go="world">4 El mundo</button>
+    </nav>
+  </header>
+
+  <div class="main" id="main">
+    <aside class="panel" id="panel">
+
+      <!-- Escena 1 -->
+      <section data-scene="home">
+        <div class="eyebrow">Paso 1 · Empieza por lo tuyo</div>
+        <h1>¿Cuánto espacio le toca a cada persona?</h1>
+        <p class="lede">Un cuadrado es un territorio. Cada punto, un millón de personas. Antes de mirar otros países, mira el tuyo.</p>
+        <label class="field"><span>Mi país</span><select id="home"></select></label>
+        <div class="tiles" id="homeTiles"></div>
+        <label class="field"><span id="problemLabel">Un problema de mi país que tenga que ver con su tamaño o su población</span>
+          <textarea id="problem" placeholder="Por ejemplo: el precio de la vivienda en las ciudades, o los pueblos que se vacían"></textarea></label>
+        <p class="small">Lo que escribas se queda en este dispositivo. Volverá a aparecer en el paso 3.</p>
+        <div class="actions"><button class="btn btn-primary" data-go="guess">Comparar con otro país →</button></div>
+      </section>
+
+      <!-- Escena 2 -->
+      <section data-scene="guess" hidden>
+        <div class="eyebrow">Paso 2 · Antes de mirar, predice</div>
+        <p class="notice" id="sharedNotice" hidden></p>
+        <h2 id="guessTitle"></h2>
+        <div class="row">
+          <label class="field"><span>Comparar con</span><select id="other"></select></label>
+          <div style="flex:0 0 auto"><button class="btn btn-ghost" id="random">Sorpréndeme</button></div>
+        </div>
+        <label class="field"><span id="gaLabel"></span><output id="gaOut"></output>
+          <input type="range" id="ga" min="-3" max="3" step="0.01" value="0"></label>
+        <label class="field"><span id="gpLabel"></span><output id="gpOut"></output>
+          <input type="range" id="gp" min="-3" max="3" step="0.01" value="0"></label>
+        <p class="small">El cuadrado de la derecha es tu predicción. Muévelo hasta que te parezca correcto.</p>
+        <div class="actions"><button class="btn btn-primary" id="revealBtn">Revelar</button></div>
+      </section>
+
+      <!-- Escena 3 -->
+      <section data-scene="reveal" hidden>
+        <div class="eyebrow">Paso 3 · Compara</div>
+        <h2 id="revealTitle"></h2>
+        <div class="verdict" id="verdict"></div>
+        <div id="equiv" class="small"></div>
+        <p class="prompt" id="reflect"></p>
+        <div class="actions">
+          <button class="btn btn-primary" id="shareImg">Guardar imagen</button>
+          <button class="btn" id="copyLink">Copiar enlace</button>
+        </div>
+        <div class="actions">
+          <button class="btn btn-ghost" data-go="guess">Otro país</button>
+          <button class="btn btn-ghost" data-go="world">Ver el mundo</button>
+          <button class="btn btn-ghost" id="toReel">Versión para Reels</button>
+        </div>
+      </section>
+
+      <!-- Escena 4 -->
+      <section data-scene="world" hidden>
+        <div class="eyebrow">Paso 4 · El mundo</div>
+        <h2>El mundo frente a <span class="home-name" id="worldHome"></span></h2>
+        <label class="field"><span>Comparar todos con</span><select id="home2"></select></label>
+        <p class="legend-line"><i class="sw-home"></i><span id="worldLegend"></span></p>
+        <h3 class="sub" id="viewTitle">Muestra diversa</h3>
+        <div class="row">
+          <label class="field"><span>Qué países ver</span><select id="view">
+            <option value="sample">Muestra diversa (40)</option>
+            <option value="gdp">Top 30 por PIB</option>
+            <option value="pop">Top 30 por población</option>
+            <option value="all">Todos (195)</option></select></label>
+          <label class="field"><span>Continente</span><select id="cont"><option value="">Todos</option></select></label>
+          <label class="field"><span>Ordenar por</span><select id="sort">
+            <option value="cont">Continente</option><option value="d">Densidad</option>
+            <option value="p">Población</option><option value="a">Territorio</option></select></label>
+        </div>
+        <div class="tiles" id="covTiles"></div>
+        <div class="tiles five" id="contTiles"></div>
+        <p class="small" id="viewNote"></p>
+        <p class="small" id="worldHelp"></p>
+      </section>
+
+      <footer class="sources" id="sources"></footer>
+    </aside>
+
+    <div class="stage" id="stage" aria-label="Visualización">
+      <div class="stage-tag" id="stageTag" hidden><i class="sw-home"></i><span id="stageTagText"></span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= MODO EXPORTACIÓN ================= -->
+<div class="export" id="export" hidden>
+  <div class="tools">
+    <button class="btn btn-ghost" id="exBack">← Volver</button>
+    <select id="exFormat" aria-label="Formato">
+      <option value="reel">Reel 1080×1920</option>
+      <option value="post">Publicación 1080×1350</option>
+    </select>
+    <select id="exTheme" aria-label="Tema">
+      <option value="light">Claro</option><option value="dark">Oscuro</option>
+    </select>
+    <button class="btn" id="exPlay">Reproducir</button>
+    <button class="btn btn-primary" id="exRec">Grabar vídeo</button>
+    <button class="btn" id="exPng">Guardar fotograma</button>
+    <span class="small" id="exInfo"></span>
+  </div>
+  <div class="frame" id="exFrame"></div>
+</div>
+
+<script src="../shared/lib/p5.min.js"></script>
+<script src="../shared/data/countries.js"></script>
+<script src="../shared/js/core.js"></script>
+<script src="sketch.js"></script>
+</body>
+</html>

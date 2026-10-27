@@ -1,0 +1,3566 @@
+{
+ "meta": {
+  "actualizado": "2026-10-18",
+  "fuentes": {
+   "poblacion": "Banco Mundial, SP.POP.TOTL, estimación 2025. Taiwán: Naciones Unidas, WPP 2024.",
+   "pib": "Banco Mundial, NY.GDP.MKTP.CD, PIB nominal en USD corrientes, último año disponible. Taiwán: FMI.",
+   "superficie": "Superficie total en km², github.com/mledoze/countries. Francia: solo metropolitana.",
+   "suelo": "Banco Mundial (datos de FAO y ONU-Hábitat/WUP): superficie terrestre, tierra arable, cultivos permanentes, tierra agrícola, bosque, población urbana y población en la mayor ciudad. Años: tierra_km2 2023, arable_pct 2024, cultivo_permanente_pct 2024, agricola_pct 2024, bosque_pct 2024, urbana_pct 2025, mayor_ciudad_pct_urbana 2025."
+  },
+  "notas": "Corea del Norte sin dato de PIB."
+ },
+ "muestra": [
+  "ESP",
+  "FRA",
+  "DEU",
+  "ITA",
+  "GBR",
+  "NLD",
+  "RUS",
+  "UKR",
+  "IND",
+  "CHN",
+  "IDN",
+  "PAK",
+  "BGD",
+  "JPN",
+  "KOR",
+  "PHL",
+  "VNM",
+  "SAU",
+  "MNG",
+  "SGP",
+  "NGA",
+  "ETH",
+  "EGY",
+  "COD",
+  "ZAF",
+  "KEN",
+  "NER",
+  "DZA",
+  "USA",
+  "BRA",
+  "MEX",
+  "CAN",
+  "COL",
+  "PER",
+  "ARG",
+  "HTI",
+  "AUS",
+  "NZL",
+  "PNG",
+  "FJI"
+ ],
+ "paises": [
+  {
+   "iso": "AFG",
+   "nombre": "Afganistán",
+   "continente": "Asia",
+   "area_km2": 652230,
+   "poblacion": 43844111,
+   "pib_usd": 14502158192,
+   "pib_anio": 2022,
+   "suelo": {
+    "tierra_km2": 652230.0,
+    "arable_pct": 11.98,
+    "cultivo_permanente_pct": 0.42,
+    "agricola_pct": 58.39,
+    "bosque_pct": 1.85,
+    "urbana_pct": 25.94,
+    "mayor_ciudad_pct_urbana": 42.88
+   }
+  },
+  {
+   "iso": "ALB",
+   "nombre": "Albania",
+   "continente": "Europa",
+   "area_km2": 28748,
+   "poblacion": 2349580,
+   "pib_usd": 22977677861,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 27400.0,
+    "arable_pct": 21.52,
+    "cultivo_permanente_pct": 3.2,
+    "agricola_pct": 41.11,
+    "bosque_pct": 34.34,
+    "urbana_pct": 58.87,
+    "mayor_ciudad_pct_urbana": 38.73
+   }
+  },
+  {
+   "iso": "DEU",
+   "nombre": "Alemania",
+   "continente": "Europa",
+   "area_km2": 357114,
+   "poblacion": 83491249,
+   "pib_usd": 4456081016706,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 349430.0,
+    "arable_pct": 33.36,
+    "cultivo_permanente_pct": 0.57,
+    "agricola_pct": 47.42,
+    "bosque_pct": 32.84,
+    "urbana_pct": 82.14,
+    "mayor_ciudad_pct_urbana": 5.22
+   }
+  },
+  {
+   "iso": "AND",
+   "nombre": "Andorra",
+   "continente": "Europa",
+   "area_km2": 468,
+   "poblacion": 82904,
+   "pib_usd": 3727673593,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 470.0,
+    "arable_pct": 0.31,
+    "cultivo_permanente_pct": 0.02,
+    "agricola_pct": 41.86,
+    "bosque_pct": 38.91,
+    "urbana_pct": 88.95,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "AGO",
+   "nombre": "Angola",
+   "continente": "África",
+   "area_km2": 1246700,
+   "poblacion": 39040039,
+   "pib_usd": 84722957642,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 1246700.0,
+    "arable_pct": 3.66,
+    "cultivo_permanente_pct": 0.29,
+    "agricola_pct": 36.32,
+    "bosque_pct": 51.15,
+    "urbana_pct": 71.46,
+    "mayor_ciudad_pct_urbana": 35.94
+   }
+  },
+  {
+   "iso": "ATG",
+   "nombre": "Antigua y Barbuda",
+   "continente": "América",
+   "area_km2": 442,
+   "poblacion": 94209,
+   "pib_usd": 2033085185,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 440.0,
+    "arable_pct": 9.08,
+    "cultivo_permanente_pct": 2.95,
+    "agricola_pct": 21.12,
+    "bosque_pct": 17.85,
+    "urbana_pct": 24.33,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "SAU",
+   "nombre": "Arabia Saudí",
+   "continente": "Asia",
+   "area_km2": 2149690,
+   "poblacion": 36973555,
+   "pib_usd": 1067582933333,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 2149690.0,
+    "arable_pct": 2.0,
+    "cultivo_permanente_pct": 0.13,
+    "agricola_pct": 81.68,
+    "bosque_pct": 1.29,
+    "urbana_pct": 84.61,
+    "mayor_ciudad_pct_urbana": 25.42
+   }
+  },
+  {
+   "iso": "DZA",
+   "nombre": "Argelia",
+   "continente": "África",
+   "area_km2": 2381741,
+   "poblacion": 47435312,
+   "pib_usd": 239899491128,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 2381740.0,
+    "arable_pct": 3.16,
+    "cultivo_permanente_pct": 0.41,
+    "agricola_pct": 17.35,
+    "bosque_pct": 0.71,
+    "urbana_pct": 75.82,
+    "mayor_ciudad_pct_urbana": 8.35
+   }
+  },
+  {
+   "iso": "ARG",
+   "nombre": "Argentina",
+   "continente": "América",
+   "area_km2": 2780400,
+   "poblacion": 45851378,
+   "pib_usd": 640591410664,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 2736690.0,
+    "arable_pct": 17.12,
+    "cultivo_permanente_pct": 0.77,
+    "agricola_pct": 29.52,
+    "bosque_pct": 17.09,
+    "urbana_pct": 92.35,
+    "mayor_ciudad_pct_urbana": 37.2
+   }
+  },
+  {
+   "iso": "ARM",
+   "nombre": "Armenia",
+   "continente": "Asia",
+   "area_km2": 29743,
+   "poblacion": 3086700,
+   "pib_usd": 24212134631,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 28199.0,
+    "arable_pct": 15.66,
+    "cultivo_permanente_pct": 2.19,
+    "agricola_pct": 59.36,
+    "bosque_pct": 11.85,
+    "urbana_pct": 65.93,
+    "mayor_ciudad_pct_urbana": 54.07
+   }
+  },
+  {
+   "iso": "AUS",
+   "nombre": "Australia",
+   "continente": "Oceanía",
+   "area_km2": 7692024,
+   "poblacion": 27614411,
+   "pib_usd": 1723827215335,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 7692020.0,
+    "arable_pct": 4.07,
+    "cultivo_permanente_pct": 0.05,
+    "agricola_pct": 47.28,
+    "bosque_pct": 17.37,
+    "urbana_pct": 87.72,
+    "mayor_ciudad_pct_urbana": 22.26
+   }
+  },
+  {
+   "iso": "AUT",
+   "nombre": "Austria",
+   "continente": "Europa",
+   "area_km2": 83871,
+   "poblacion": 9208163,
+   "pib_usd": 516034144116,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 82520.0,
+    "arable_pct": 16.01,
+    "cultivo_permanente_pct": 0.77,
+    "agricola_pct": 31.1,
+    "bosque_pct": 47.27,
+    "urbana_pct": 69.72,
+    "mayor_ciudad_pct_urbana": 31.24
+   }
+  },
+  {
+   "iso": "AZE",
+   "nombre": "Azerbaiyán",
+   "continente": "Asia",
+   "area_km2": 86600,
+   "poblacion": 10246996,
+   "pib_usd": 72356176471,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 82650.0,
+    "arable_pct": 25.33,
+    "cultivo_permanente_pct": 3.32,
+    "agricola_pct": 57.76,
+    "bosque_pct": 14.56,
+    "urbana_pct": 58.64,
+    "mayor_ciudad_pct_urbana": 41.55
+   }
+  },
+  {
+   "iso": "BHS",
+   "nombre": "Bahamas",
+   "continente": "América",
+   "area_km2": 13943,
+   "poblacion": 403033,
+   "pib_usd": 14338500000,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 10010.0,
+    "arable_pct": 0.8,
+    "cultivo_permanente_pct": 0.3,
+    "agricola_pct": 1.3,
+    "bosque_pct": 50.94,
+    "urbana_pct": 81.33,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "BHR",
+   "nombre": "Bahrein",
+   "continente": "Asia",
+   "area_km2": 765,
+   "poblacion": 1600366,
+   "pib_usd": 43205000000,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 800.0,
+    "arable_pct": 2.63,
+    "cultivo_permanente_pct": 2.66,
+    "agricola_pct": 10.29,
+    "bosque_pct": 4.86,
+    "urbana_pct": 100.0,
+    "mayor_ciudad_pct_urbana": 46.43
+   }
+  },
+  {
+   "iso": "BGD",
+   "nombre": "Bangladés",
+   "continente": "Asia",
+   "area_km2": 147570,
+   "poblacion": 175686899,
+   "pib_usd": 437415331041,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 129980.0,
+    "arable_pct": 60.51,
+    "cultivo_permanente_pct": 7.08,
+    "agricola_pct": 72.21,
+    "bosque_pct": 14.4,
+    "urbana_pct": 33.24,
+    "mayor_ciudad_pct_urbana": 42.22
+   }
+  },
+  {
+   "iso": "BRB",
+   "nombre": "Barbados",
+   "continente": "América",
+   "area_km2": 430,
+   "poblacion": 282623,
+   "pib_usd": 6393564190,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 430.0,
+    "arable_pct": 16.24,
+    "cultivo_permanente_pct": 2.32,
+    "agricola_pct": 23.2,
+    "bosque_pct": 14.62,
+    "urbana_pct": 59.7,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "BLZ",
+   "nombre": "Belice",
+   "continente": "América",
+   "area_km2": 22966,
+   "poblacion": 422924,
+   "pib_usd": 3281500000,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 22810.0,
+    "arable_pct": 4.56,
+    "cultivo_permanente_pct": 1.4,
+    "agricola_pct": 8.15,
+    "bosque_pct": 57.98,
+    "urbana_pct": 41.56,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "BEN",
+   "nombre": "Benín",
+   "continente": "África",
+   "area_km2": 112622,
+   "poblacion": 14814460,
+   "pib_usd": 19673284686,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 112760.0,
+    "arable_pct": 32.34,
+    "cultivo_permanente_pct": 5.93,
+    "agricola_pct": 43.14,
+    "bosque_pct": 28.12,
+    "urbana_pct": 53.36,
+    "mayor_ciudad_pct_urbana": 17.4
+   }
+  },
+  {
+   "iso": "BLR",
+   "nombre": "Bielorrusia",
+   "continente": "Europa",
+   "area_km2": 207600,
+   "poblacion": 9085991,
+   "pib_usd": 71857382746,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 202983.0,
+    "arable_pct": 27.2,
+    "cultivo_permanente_pct": 0.38,
+    "agricola_pct": 39.07,
+    "bosque_pct": 44.09,
+    "urbana_pct": 79.49,
+    "mayor_ciudad_pct_urbana": 28.67
+   }
+  },
+  {
+   "iso": "BOL",
+   "nombre": "Bolivia",
+   "continente": "América",
+   "area_km2": 1098581,
+   "poblacion": 12581843,
+   "pib_usd": 45849832906,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 1083300.0,
+    "arable_pct": 5.56,
+    "cultivo_permanente_pct": 0.24,
+    "agricola_pct": 36.13,
+    "bosque_pct": 50.19,
+    "urbana_pct": 71.56,
+    "mayor_ciudad_pct_urbana": 22.18
+   }
+  },
+  {
+   "iso": "BIH",
+   "nombre": "Bosnia y Herzegovina",
+   "continente": "Europa",
+   "area_km2": 51209,
+   "poblacion": 3140095,
+   "pib_usd": 27054889363,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 51200.0,
+    "arable_pct": 8.03,
+    "cultivo_permanente_pct": 1.47,
+    "agricola_pct": 22.43,
+    "bosque_pct": 42.21,
+    "urbana_pct": 52.69,
+    "mayor_ciudad_pct_urbana": 21.06
+   }
+  },
+  {
+   "iso": "BWA",
+   "nombre": "Botswana",
+   "continente": "África",
+   "area_km2": 582000,
+   "poblacion": 2562122,
+   "pib_usd": 19395765126,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 566730.0,
+    "arable_pct": 0.46,
+    "cultivo_permanente_pct": 0.0,
+    "agricola_pct": 45.63,
+    "bosque_pct": 27.76,
+    "urbana_pct": 67.96,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "BRA",
+   "nombre": "Brasil",
+   "continente": "América",
+   "area_km2": 8515767,
+   "poblacion": 212812405,
+   "pib_usd": 2173665655937,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 8358140.0,
+    "arable_pct": 6.66,
+    "cultivo_permanente_pct": 0.97,
+    "agricola_pct": 28.37,
+    "bosque_pct": 58.55,
+    "urbana_pct": 88.18,
+    "mayor_ciudad_pct_urbana": 12.25
+   }
+  },
+  {
+   "iso": "BRN",
+   "nombre": "Brunei",
+   "continente": "Asia",
+   "area_km2": 5765,
+   "poblacion": 466330,
+   "pib_usd": 15128292954,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 5270.0,
+    "arable_pct": 0.76,
+    "cultivo_permanente_pct": 1.5,
+    "agricola_pct": 2.9,
+    "bosque_pct": 72.11,
+    "urbana_pct": 75.01,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "BGR",
+   "nombre": "Bulgaria",
+   "continente": "Europa",
+   "area_km2": 110879,
+   "poblacion": 6433302,
+   "pib_usd": 101584384673,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 108560.0,
+    "arable_pct": 32.17,
+    "cultivo_permanente_pct": 1.26,
+    "agricola_pct": 46.19,
+    "bosque_pct": 36.35,
+    "urbana_pct": 74.17,
+    "mayor_ciudad_pct_urbana": 26.96
+   }
+  },
+  {
+   "iso": "BFA",
+   "nombre": "Burkina Faso",
+   "continente": "África",
+   "area_km2": 272967,
+   "poblacion": 24074580,
+   "pib_usd": 20324617839,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 273600.0,
+    "arable_pct": 28.9,
+    "cultivo_permanente_pct": 2.49,
+    "agricola_pct": 62.58,
+    "bosque_pct": 12.27,
+    "urbana_pct": 28.92,
+    "mayor_ciudad_pct_urbana": 50.56
+   }
+  },
+  {
+   "iso": "BDI",
+   "nombre": "Burundi",
+   "continente": "África",
+   "area_km2": 27834,
+   "poblacion": 14390003,
+   "pib_usd": 2642161669,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 25680.0,
+    "arable_pct": 43.66,
+    "cultivo_permanente_pct": 11.92,
+    "agricola_pct": 74.21,
+    "bosque_pct": 10.89,
+    "urbana_pct": 25.69,
+    "mayor_ciudad_pct_urbana": 36.53
+   }
+  },
+  {
+   "iso": "BTN",
+   "nombre": "Bután",
+   "continente": "Asia",
+   "area_km2": 38394,
+   "poblacion": 796682,
+   "pib_usd": 2898227713,
+   "pib_anio": 2022,
+   "suelo": {
+    "tierra_km2": 38140.0,
+    "arable_pct": 2.62,
+    "cultivo_permanente_pct": 0.37,
+    "agricola_pct": 13.82,
+    "bosque_pct": 70.35,
+    "urbana_pct": 43.43,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "BEL",
+   "nombre": "Bélgica",
+   "continente": "Europa",
+   "area_km2": 30528,
+   "poblacion": 11941781,
+   "pib_usd": 632216577075,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 30494.0,
+    "arable_pct": 28.31,
+    "cultivo_permanente_pct": 0.77,
+    "agricola_pct": 44.41,
+    "bosque_pct": 21.99,
+    "urbana_pct": 87.67,
+    "mayor_ciudad_pct_urbana": 20.45
+   }
+  },
+  {
+   "iso": "CPV",
+   "nombre": "Cabo Verde",
+   "continente": "África",
+   "area_km2": 4033,
+   "poblacion": 527326,
+   "pib_usd": 2587252076,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 4030.0,
+    "arable_pct": 17.97,
+    "cultivo_permanente_pct": 0.61,
+    "agricola_pct": 24.79,
+    "bosque_pct": 12.52,
+    "urbana_pct": 77.63,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "KHM",
+   "nombre": "Camboya",
+   "continente": "Asia",
+   "area_km2": 181035,
+   "poblacion": 17847982,
+   "pib_usd": 31772759999,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 176520.0,
+    "arable_pct": 23.34,
+    "cultivo_permanente_pct": 2.83,
+    "agricola_pct": 34.67,
+    "bosque_pct": 37.63,
+    "urbana_pct": 41.11,
+    "mayor_ciudad_pct_urbana": 33.06
+   }
+  },
+  {
+   "iso": "CMR",
+   "nombre": "Camerún",
+   "continente": "África",
+   "area_km2": 475442,
+   "poblacion": 29879337,
+   "pib_usd": 47945510090,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 472710.0,
+    "arable_pct": 13.12,
+    "cultivo_permanente_pct": 3.74,
+    "agricola_pct": 21.08,
+    "bosque_pct": 40.74,
+    "urbana_pct": 55.67,
+    "mayor_ciudad_pct_urbana": 29.18
+   }
+  },
+  {
+   "iso": "CAN",
+   "nombre": "Canadá",
+   "continente": "América",
+   "area_km2": 9984670,
+   "poblacion": 41651653,
+   "pib_usd": 2140085567791,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 8788700.0,
+    "arable_pct": 4.33,
+    "cultivo_permanente_pct": 0.02,
+    "agricola_pct": 6.46,
+    "bosque_pct": 41.97,
+    "urbana_pct": 82.88,
+    "mayor_ciudad_pct_urbana": 18.8
+   }
+  },
+  {
+   "iso": "QAT",
+   "nombre": "Catar",
+   "continente": "Asia",
+   "area_km2": 11586,
+   "poblacion": 2972215,
+   "pib_usd": 235770403735,
+   "pib_anio": 2022,
+   "suelo": {
+    "tierra_km2": 11490.0,
+    "arable_pct": 1.82,
+    "cultivo_permanente_pct": 0.27,
+    "agricola_pct": 6.44,
+    "bosque_pct": 0.12,
+    "urbana_pct": 99.36,
+    "mayor_ciudad_pct_urbana": 28.16
+   }
+  },
+  {
+   "iso": "TCD",
+   "nombre": "Chad",
+   "continente": "África",
+   "area_km2": 1284000,
+   "poblacion": 21003705,
+   "pib_usd": 13149325359,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 1259200.0,
+    "arable_pct": 4.21,
+    "cultivo_permanente_pct": 0.03,
+    "agricola_pct": 39.98,
+    "bosque_pct": 2.97,
+    "urbana_pct": 27.57,
+    "mayor_ciudad_pct_urbana": 29.76
+   }
+  },
+  {
+   "iso": "CZE",
+   "nombre": "Chequia",
+   "continente": "Europa",
+   "area_km2": 78865,
+   "poblacion": 10886878,
+   "pib_usd": 330858339872,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 77167.0,
+    "arable_pct": 32.73,
+    "cultivo_permanente_pct": 0.52,
+    "agricola_pct": 45.81,
+    "bosque_pct": 38.36,
+    "urbana_pct": 72.88,
+    "mayor_ciudad_pct_urbana": 16.79
+   }
+  },
+  {
+   "iso": "CHL",
+   "nombre": "Chile",
+   "continente": "América",
+   "area_km2": 756102,
+   "poblacion": 19859921,
+   "pib_usd": 335533331669,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 742832.0,
+    "arable_pct": 1.9,
+    "cultivo_permanente_pct": 0.67,
+    "agricola_pct": 14.41,
+    "bosque_pct": 24.48,
+    "urbana_pct": 89.18,
+    "mayor_ciudad_pct_urbana": 39.52
+   }
+  },
+  {
+   "iso": "CHN",
+   "nombre": "China",
+   "continente": "Asia",
+   "area_km2": 9706961,
+   "poblacion": 1406585000,
+   "pib_usd": 17794781986104,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 9388210.0,
+    "arable_pct": 11.55,
+    "cultivo_permanente_pct": 2.15,
+    "agricola_pct": 41.74,
+    "bosque_pct": 24.02,
+    "urbana_pct": 66.34,
+    "mayor_ciudad_pct_urbana": 3.27
+   }
+  },
+  {
+   "iso": "CYP",
+   "nombre": "Chipre",
+   "continente": "Europa",
+   "area_km2": 9251,
+   "poblacion": 1370754,
+   "pib_usd": 32229622669,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 9240.0,
+    "arable_pct": 10.42,
+    "cultivo_permanente_pct": 2.92,
+    "agricola_pct": 13.56,
+    "bosque_pct": 18.6,
+    "urbana_pct": 66.7,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "COL",
+   "nombre": "Colombia",
+   "continente": "América",
+   "area_km2": 1141748,
+   "poblacion": 53425635,
+   "pib_usd": 363540156235,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 1109500.0,
+    "arable_pct": 2.65,
+    "cultivo_permanente_pct": 2.23,
+    "agricola_pct": 36.54,
+    "bosque_pct": 53.71,
+    "urbana_pct": 78.78,
+    "mayor_ciudad_pct_urbana": 28.03
+   }
+  },
+  {
+   "iso": "COM",
+   "nombre": "Comoras",
+   "continente": "África",
+   "area_km2": 1862,
+   "poblacion": 882847,
+   "pib_usd": 1352380972,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 1861.0,
+    "arable_pct": 29.6,
+    "cultivo_permanente_pct": 41.28,
+    "agricola_pct": 78.91,
+    "bosque_pct": 17.79,
+    "urbana_pct": 33.94,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "COG",
+   "nombre": "Congo",
+   "continente": "África",
+   "area_km2": 342000,
+   "poblacion": 6484437,
+   "pib_usd": 15321055818,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 341500.0,
+    "arable_pct": 1.61,
+    "cultivo_permanente_pct": 0.3,
+    "agricola_pct": 31.19,
+    "bosque_pct": 63.95,
+    "urbana_pct": 64.12,
+    "mayor_ciudad_pct_urbana": 67.66
+   }
+  },
+  {
+   "iso": "PRK",
+   "nombre": "Corea del Norte",
+   "continente": "Asia",
+   "area_km2": 120538,
+   "poblacion": 26571036,
+   "pib_usd": null,
+   "pib_anio": null,
+   "suelo": {
+    "tierra_km2": 120410.0,
+    "arable_pct": 19.06,
+    "cultivo_permanente_pct": 2.1,
+    "agricola_pct": 21.57,
+    "bosque_pct": 64.09,
+    "urbana_pct": 64.19,
+    "mayor_ciudad_pct_urbana": 18.82
+   }
+  },
+  {
+   "iso": "KOR",
+   "nombre": "Corea del Sur",
+   "continente": "Asia",
+   "area_km2": 100210,
+   "poblacion": 51684564,
+   "pib_usd": 1712792854202,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 97600.0,
+    "arable_pct": 13.34,
+    "cultivo_permanente_pct": 2.08,
+    "agricola_pct": 15.99,
+    "bosque_pct": 64.37,
+    "urbana_pct": 81.17,
+    "mayor_ciudad_pct_urbana": 23.9
+   }
+  },
+  {
+   "iso": "CRI",
+   "nombre": "Costa Rica",
+   "continente": "América",
+   "area_km2": 51100,
+   "poblacion": 5152950,
+   "pib_usd": 86497941439,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 51060.0,
+    "arable_pct": 3.31,
+    "cultivo_permanente_pct": 7.46,
+    "agricola_pct": 31.43,
+    "bosque_pct": 59.06,
+    "urbana_pct": 79.73,
+    "mayor_ciudad_pct_urbana": 36.58
+   }
+  },
+  {
+   "iso": "CIV",
+   "nombre": "Costa de Marfil",
+   "continente": "África",
+   "area_km2": 322463,
+   "poblacion": 32711547,
+   "pib_usd": 78788828907,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 318000.0,
+    "arable_pct": 15.66,
+    "cultivo_permanente_pct": 26.69,
+    "agricola_pct": 83.86,
+    "bosque_pct": 12.12,
+    "urbana_pct": 54.55,
+    "mayor_ciudad_pct_urbana": 33.94
+   }
+  },
+  {
+   "iso": "HRV",
+   "nombre": "Croacia",
+   "continente": "Europa",
+   "area_km2": 56594,
+   "poblacion": 3876200,
+   "pib_usd": 82688842717,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 55960.0,
+    "arable_pct": 15.23,
+    "cultivo_permanente_pct": 1.41,
+    "agricola_pct": 26.22,
+    "bosque_pct": 34.75,
+    "urbana_pct": 57.81,
+    "mayor_ciudad_pct_urbana": 30.54
+   }
+  },
+  {
+   "iso": "CUB",
+   "nombre": "Cuba",
+   "continente": "América",
+   "area_km2": 109884,
+   "poblacion": 10937203,
+   "pib_usd": 107351800000,
+   "pib_anio": 2020,
+   "suelo": {
+    "tierra_km2": 103800.0,
+    "arable_pct": 28.02,
+    "cultivo_permanente_pct": 6.29,
+    "agricola_pct": 61.67,
+    "bosque_pct": 34.88,
+    "urbana_pct": 77.23,
+    "mayor_ciudad_pct_urbana": 25.53
+   }
+  },
+  {
+   "iso": "DNK",
+   "nombre": "Dinamarca",
+   "continente": "Europa",
+   "area_km2": 43094,
+   "poblacion": 6009169,
+   "pib_usd": 404198757538,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 40000.0,
+    "arable_pct": 58.85,
+    "cultivo_permanente_pct": 0.7,
+    "agricola_pct": 65.13,
+    "bosque_pct": 16.01,
+    "urbana_pct": 88.85,
+    "mayor_ciudad_pct_urbana": 26.24
+   }
+  },
+  {
+   "iso": "DJI",
+   "nombre": "Djibouti",
+   "continente": "África",
+   "area_km2": 23200,
+   "poblacion": 1184076,
+   "pib_usd": 4098530514,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 23180.0,
+    "arable_pct": 0.16,
+    "cultivo_permanente_pct": 0.04,
+    "agricola_pct": 73.53,
+    "bosque_pct": 0.26,
+    "urbana_pct": 72.98,
+    "mayor_ciudad_pct_urbana": 71.33
+   }
+  },
+  {
+   "iso": "DMA",
+   "nombre": "Dominica",
+   "continente": "América",
+   "area_km2": 751,
+   "poblacion": 65871,
+   "pib_usd": 653992593,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 750.0,
+    "arable_pct": 7.32,
+    "cultivo_permanente_pct": 22.64,
+    "agricola_pct": 32.62,
+    "bosque_pct": 76.42,
+    "urbana_pct": 73.99,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "ECU",
+   "nombre": "Ecuador",
+   "continente": "América",
+   "area_km2": 276841,
+   "poblacion": 18289896,
+   "pib_usd": 118844826000,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 248360.0,
+    "arable_pct": 3.74,
+    "cultivo_permanente_pct": 5.42,
+    "agricola_pct": 20.29,
+    "bosque_pct": 49.69,
+    "urbana_pct": 63.39,
+    "mayor_ciudad_pct_urbana": 27.99
+   }
+  },
+  {
+   "iso": "EGY",
+   "nombre": "Egipto",
+   "continente": "África",
+   "area_km2": 1002450,
+   "poblacion": 118365995,
+   "pib_usd": 395926075163,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 995450.0,
+    "arable_pct": 3.29,
+    "cultivo_permanente_pct": 0.96,
+    "agricola_pct": 4.25,
+    "bosque_pct": 0.0,
+    "urbana_pct": 42.9,
+    "mayor_ciudad_pct_urbana": 45.44
+   }
+  },
+  {
+   "iso": "SLV",
+   "nombre": "El Salvador",
+   "continente": "América",
+   "area_km2": 21041,
+   "poblacion": 6365503,
+   "pib_usd": 34015620000,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 20720.0,
+    "arable_pct": 34.8,
+    "cultivo_permanente_pct": 7.27,
+    "agricola_pct": 57.26,
+    "bosque_pct": 33.01,
+    "urbana_pct": 75.52,
+    "mayor_ciudad_pct_urbana": 23.56
+   }
+  },
+  {
+   "iso": "ARE",
+   "nombre": "Emiratos Árabes Unidos",
+   "continente": "Asia",
+   "area_km2": 83600,
+   "poblacion": 11513149,
+   "pib_usd": 504173451327,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 71020.0,
+    "arable_pct": 0.79,
+    "cultivo_permanente_pct": 0.58,
+    "agricola_pct": 5.6,
+    "bosque_pct": 4.57,
+    "urbana_pct": 85.96,
+    "mayor_ciudad_pct_urbana": 31.27
+   }
+  },
+  {
+   "iso": "ERI",
+   "nombre": "Eritrea",
+   "continente": "África",
+   "area_km2": 117600,
+   "poblacion": 3607003,
+   "pib_usd": 2065001626,
+   "pib_anio": 2011,
+   "suelo": {
+    "tierra_km2": 121178.0,
+    "arable_pct": 5.71,
+    "cultivo_permanente_pct": 0.01,
+    "agricola_pct": 62.84,
+    "bosque_pct": 11.99,
+    "urbana_pct": 34.54,
+    "mayor_ciudad_pct_urbana": 92.48
+   }
+  },
+  {
+   "iso": "SVK",
+   "nombre": "Eslovaquia",
+   "continente": "Europa",
+   "area_km2": 49037,
+   "poblacion": 5413813,
+   "pib_usd": 132793622283,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 48080.0,
+    "arable_pct": 27.12,
+    "cultivo_permanente_pct": 0.35,
+    "agricola_pct": 37.83,
+    "bosque_pct": 40.32,
+    "urbana_pct": 53.19,
+    "mayor_ciudad_pct_urbana": 15.41
+   }
+  },
+  {
+   "iso": "SVN",
+   "nombre": "Eslovenia",
+   "continente": "Europa",
+   "area_km2": 20273,
+   "poblacion": 2130986,
+   "pib_usd": 68216781411,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 20135.0,
+    "arable_pct": 8.81,
+    "cultivo_permanente_pct": 2.64,
+    "agricola_pct": 30.36,
+    "bosque_pct": 61.77,
+    "urbana_pct": 55.99,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "ESP",
+   "nombre": "España",
+   "continente": "Europa",
+   "area_km2": 505992,
+   "poblacion": 49355143,
+   "pib_usd": 1580694712516,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 499697.0,
+    "arable_pct": 22.78,
+    "cultivo_permanente_pct": 10.2,
+    "agricola_pct": 49.3,
+    "bosque_pct": 38.23,
+    "urbana_pct": 80.51,
+    "mayor_ciudad_pct_urbana": 17.14
+   }
+  },
+  {
+   "iso": "USA",
+   "nombre": "Estados Unidos",
+   "continente": "América",
+   "area_km2": 9372610,
+   "poblacion": 341784857,
+   "pib_usd": 27360935000000,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 9147420.0,
+    "arable_pct": 16.57,
+    "cultivo_permanente_pct": 0.35,
+    "agricola_pct": 46.08,
+    "bosque_pct": 33.78,
+    "urbana_pct": 80.19,
+    "mayor_ciudad_pct_urbana": 6.99
+   }
+  },
+  {
+   "iso": "EST",
+   "nombre": "Estonia",
+   "continente": "Europa",
+   "area_km2": 45227,
+   "poblacion": 1366475,
+   "pib_usd": 40744848828,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 42730.0,
+    "arable_pct": 16.5,
+    "cultivo_permanente_pct": 0.09,
+    "agricola_pct": 22.98,
+    "bosque_pct": 57.25,
+    "urbana_pct": 70.72,
+    "mayor_ciudad_pct_urbana": 47.36
+   }
+  },
+  {
+   "iso": "SWZ",
+   "nombre": "Esuatini",
+   "continente": "África",
+   "area_km2": 17364,
+   "poblacion": 1256174,
+   "pib_usd": 4597855845,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 17200.0,
+    "arable_pct": 10.29,
+    "cultivo_permanente_pct": 1.18,
+    "agricola_pct": 69.62,
+    "bosque_pct": 25.27,
+    "urbana_pct": 26.72,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "ETH",
+   "nombre": "Etiopía",
+   "continente": "África",
+   "area_km2": 1104300,
+   "poblacion": 135472051,
+   "pib_usd": 163697927594,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 1128499.0,
+    "arable_pct": 14.61,
+    "cultivo_permanente_pct": 1.83,
+    "agricola_pct": 34.27,
+    "bosque_pct": 23.84,
+    "urbana_pct": 24.11,
+    "mayor_ciudad_pct_urbana": 18.24
+   }
+  },
+  {
+   "iso": "PHL",
+   "nombre": "Filipinas",
+   "continente": "Asia",
+   "area_km2": 342353,
+   "poblacion": 116786962,
+   "pib_usd": 437146372730,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 298170.0,
+    "arable_pct": 18.75,
+    "cultivo_permanente_pct": 18.97,
+    "agricola_pct": 42.75,
+    "bosque_pct": 24.81,
+    "urbana_pct": 55.77,
+    "mayor_ciudad_pct_urbana": 23.38
+   }
+  },
+  {
+   "iso": "FIN",
+   "nombre": "Finlandia",
+   "continente": "Europa",
+   "area_km2": 338424,
+   "poblacion": 5646436,
+   "pib_usd": 300187202696,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 303960.0,
+    "arable_pct": 7.37,
+    "cultivo_permanente_pct": 0.02,
+    "agricola_pct": 7.43,
+    "bosque_pct": 74.15,
+    "urbana_pct": 74.52,
+    "mayor_ciudad_pct_urbana": 32.2
+   }
+  },
+  {
+   "iso": "FJI",
+   "nombre": "Fiyi",
+   "continente": "Oceanía",
+   "area_km2": 18272,
+   "poblacion": 933154,
+   "pib_usd": 5494797541,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 18270.0,
+    "arable_pct": 4.19,
+    "cultivo_permanente_pct": 3.37,
+    "agricola_pct": 17.0,
+    "bosque_pct": 61.74,
+    "urbana_pct": 59.54,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "FRA",
+   "nombre": "Francia",
+   "continente": "Europa",
+   "area_km2": 551695,
+   "poblacion": 68720337,
+   "pib_usd": 3030904089608,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 538950.0,
+    "arable_pct": 31.32,
+    "cultivo_permanente_pct": 1.88,
+    "agricola_pct": 52.77,
+    "bosque_pct": 32.85,
+    "urbana_pct": 78.84,
+    "mayor_ciudad_pct_urbana": 20.94
+   }
+  },
+  {
+   "iso": "GAB",
+   "nombre": "Gabón",
+   "continente": "África",
+   "area_km2": 267668,
+   "poblacion": 2593130,
+   "pib_usd": 20516134389,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 257670.0,
+    "arable_pct": 1.26,
+    "cultivo_permanente_pct": 0.66,
+    "agricola_pct": 6.88,
+    "bosque_pct": 91.44,
+    "urbana_pct": 92.09,
+    "mayor_ciudad_pct_urbana": 37.66
+   }
+  },
+  {
+   "iso": "GMB",
+   "nombre": "Gambia",
+   "continente": "África",
+   "area_km2": 10689,
+   "poblacion": 2822093,
+   "pib_usd": 2339904157,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 10120.0,
+    "arable_pct": 58.1,
+    "cultivo_permanente_pct": 2.61,
+    "agricola_pct": 76.12,
+    "bosque_pct": 21.34,
+    "urbana_pct": 64.99,
+    "mayor_ciudad_pct_urbana": 27.82
+   }
+  },
+  {
+   "iso": "GEO",
+   "nombre": "Georgia",
+   "continente": "Asia",
+   "area_km2": 69700,
+   "poblacion": 3935766,
+   "pib_usd": 30535530479,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 69490.0,
+    "arable_pct": 3.95,
+    "cultivo_permanente_pct": 1.84,
+    "agricola_pct": 33.71,
+    "bosque_pct": 44.62,
+    "urbana_pct": 61.18,
+    "mayor_ciudad_pct_urbana": 45.15
+   }
+  },
+  {
+   "iso": "GHA",
+   "nombre": "Ghana",
+   "continente": "África",
+   "area_km2": 238533,
+   "poblacion": 35064272,
+   "pib_usd": 76370394412,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 227533.0,
+    "arable_pct": 20.7,
+    "cultivo_permanente_pct": 11.9,
+    "agricola_pct": 55.39,
+    "bosque_pct": 30.86,
+    "urbana_pct": 58.92,
+    "mayor_ciudad_pct_urbana": 19.54
+   }
+  },
+  {
+   "iso": "GRC",
+   "nombre": "Grecia",
+   "continente": "Europa",
+   "area_km2": 131990,
+   "poblacion": 10413962,
+   "pib_usd": 238206312633,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 128900.0,
+    "arable_pct": 14.23,
+    "cultivo_permanente_pct": 8.17,
+    "agricola_pct": 38.91,
+    "bosque_pct": 36.95,
+    "urbana_pct": 79.22,
+    "mayor_ciudad_pct_urbana": 38.24
+   }
+  },
+  {
+   "iso": "GRD",
+   "nombre": "Grenada",
+   "continente": "América",
+   "area_km2": 344,
+   "poblacion": 117303,
+   "pib_usd": 1320334236,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 340.0,
+    "arable_pct": 8.72,
+    "cultivo_permanente_pct": 11.63,
+    "agricola_pct": 23.26,
+    "bosque_pct": 51.45,
+    "urbana_pct": 36.67,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "GTM",
+   "nombre": "Guatemala",
+   "continente": "América",
+   "area_km2": 108889,
+   "poblacion": 18687881,
+   "pib_usd": 102050473864,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 107160.0,
+    "arable_pct": 17.51,
+    "cultivo_permanente_pct": 11.04,
+    "agricola_pct": 46.04,
+    "bosque_pct": 33.12,
+    "urbana_pct": 56.3,
+    "mayor_ciudad_pct_urbana": 30.7
+   }
+  },
+  {
+   "iso": "GIN",
+   "nombre": "Guinea",
+   "continente": "África",
+   "area_km2": 245857,
+   "poblacion": 15099727,
+   "pib_usd": 23612295818,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 245720.0,
+    "arable_pct": 24.7,
+    "cultivo_permanente_pct": 4.97,
+    "agricola_pct": 73.22,
+    "bosque_pct": 20.04,
+    "urbana_pct": 38.52,
+    "mayor_ciudad_pct_urbana": 38.71
+   }
+  },
+  {
+   "iso": "GNQ",
+   "nombre": "Guinea Ecuatorial",
+   "continente": "África",
+   "area_km2": 28051,
+   "poblacion": 1938431,
+   "pib_usd": 12116922539,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 28050.0,
+    "arable_pct": 1.89,
+    "cultivo_permanente_pct": 1.38,
+    "agricola_pct": 3.44,
+    "bosque_pct": 86.09,
+    "urbana_pct": 71.58,
+    "mayor_ciudad_pct_urbana": 36.96
+   }
+  },
+  {
+   "iso": "GNB",
+   "nombre": "Guinea-Bisáu",
+   "continente": "África",
+   "area_km2": 36125,
+   "poblacion": 2249515,
+   "pib_usd": 1966461400,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 28120.0,
+    "arable_pct": 16.12,
+    "cultivo_permanente_pct": 8.34,
+    "agricola_pct": 31.4,
+    "bosque_pct": 74.82,
+    "urbana_pct": 46.65,
+    "mayor_ciudad_pct_urbana": 67.57
+   }
+  },
+  {
+   "iso": "GUY",
+   "nombre": "Guyana",
+   "continente": "América",
+   "area_km2": 214969,
+   "poblacion": 835986,
+   "pib_usd": 16786302158,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 211140.0,
+    "arable_pct": 0.45,
+    "cultivo_permanente_pct": 0.15,
+    "agricola_pct": 3.41,
+    "bosque_pct": 87.07,
+    "urbana_pct": 26.49,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "HTI",
+   "nombre": "Haití",
+   "continente": "América",
+   "area_km2": 27750,
+   "poblacion": 11906095,
+   "pib_usd": 19850829758,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 27560.0,
+    "arable_pct": 36.47,
+    "cultivo_permanente_pct": 10.89,
+    "agricola_pct": 65.14,
+    "bosque_pct": 13.45,
+    "urbana_pct": 55.61,
+    "mayor_ciudad_pct_urbana": 47.32
+   }
+  },
+  {
+   "iso": "HND",
+   "nombre": "Honduras",
+   "continente": "América",
+   "area_km2": 112492,
+   "poblacion": 11005850,
+   "pib_usd": 34400509852,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 111890.0,
+    "arable_pct": 9.1,
+    "cultivo_permanente_pct": 6.32,
+    "agricola_pct": 28.49,
+    "bosque_pct": 52.83,
+    "urbana_pct": 59.25,
+    "mayor_ciudad_pct_urbana": 25.31
+   }
+  },
+  {
+   "iso": "HUN",
+   "nombre": "Hungría",
+   "continente": "Europa",
+   "area_km2": 93028,
+   "poblacion": 9514251,
+   "pib_usd": 212388906459,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 91260.0,
+    "arable_pct": 45.24,
+    "cultivo_permanente_pct": 1.58,
+    "agricola_pct": 55.52,
+    "bosque_pct": 22.81,
+    "urbana_pct": 70.69,
+    "mayor_ciudad_pct_urbana": 26.5
+   }
+  },
+  {
+   "iso": "IND",
+   "nombre": "India",
+   "continente": "Asia",
+   "area_km2": 3287590,
+   "poblacion": 1463865525,
+   "pib_usd": 3549918918778,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 2973190.0,
+    "arable_pct": 51.73,
+    "cultivo_permanente_pct": 4.78,
+    "agricola_pct": 59.94,
+    "bosque_pct": 24.44,
+    "urbana_pct": 35.69,
+    "mayor_ciudad_pct_urbana": 6.64
+   }
+  },
+  {
+   "iso": "IDN",
+   "nombre": "Indonesia",
+   "continente": "Asia",
+   "area_km2": 1904569,
+   "poblacion": 285721236,
+   "pib_usd": 1371171152331,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 1892555.0,
+    "arable_pct": 9.35,
+    "cultivo_permanente_pct": 13.77,
+    "agricola_pct": 28.93,
+    "bosque_pct": 50.67,
+    "urbana_pct": 59.39,
+    "mayor_ciudad_pct_urbana": 6.86
+   }
+  },
+  {
+   "iso": "IRQ",
+   "nombre": "Irak",
+   "continente": "Asia",
+   "area_km2": 438317,
+   "poblacion": 47020774,
+   "pib_usd": 250842782139,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 434130.0,
+    "arable_pct": 11.3,
+    "cultivo_permanente_pct": 1.17,
+    "agricola_pct": 21.65,
+    "bosque_pct": 1.61,
+    "urbana_pct": 69.94,
+    "mayor_ciudad_pct_urbana": 24.76
+   }
+  },
+  {
+   "iso": "IRN",
+   "nombre": "Iran",
+   "continente": "Asia",
+   "area_km2": 1648195,
+   "poblacion": 92417681,
+   "pib_usd": 401504514719,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 1622500.0,
+    "arable_pct": 9.68,
+    "cultivo_permanente_pct": 1.17,
+    "agricola_pct": 29.01,
+    "bosque_pct": 6.63,
+    "urbana_pct": 77.38,
+    "mayor_ciudad_pct_urbana": 13.61
+   }
+  },
+  {
+   "iso": "IRL",
+   "nombre": "Irlanda",
+   "continente": "Europa",
+   "area_km2": 70273,
+   "poblacion": 5484367,
+   "pib_usd": 545629450404,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 68890.0,
+    "arable_pct": 6.29,
+    "cultivo_permanente_pct": 0.01,
+    "agricola_pct": 65.15,
+    "bosque_pct": 11.97,
+    "urbana_pct": 64.59,
+    "mayor_ciudad_pct_urbana": 36.67
+   }
+  },
+  {
+   "iso": "ISL",
+   "nombre": "Islandia",
+   "continente": "Europa",
+   "area_km2": 103000,
+   "poblacion": 392404,
+   "pib_usd": 31020032583,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 100830.0,
+    "arable_pct": 1.2,
+    "cultivo_permanente_pct": null,
+    "agricola_pct": 16.25,
+    "bosque_pct": 0.6,
+    "urbana_pct": 94.22,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "MHL",
+   "nombre": "Islas Marshall",
+   "continente": "Oceanía",
+   "area_km2": 181,
+   "poblacion": 36282,
+   "pib_usd": 284000000,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 180.0,
+    "arable_pct": 2.76,
+    "cultivo_permanente_pct": 37.4,
+    "agricola_pct": 40.17,
+    "bosque_pct": 53.65,
+    "urbana_pct": 79.11,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "SLB",
+   "nombre": "Islas Salomón",
+   "continente": "Oceanía",
+   "area_km2": 28896,
+   "poblacion": 838645,
+   "pib_usd": 1631286701,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 27990.0,
+    "arable_pct": 0.83,
+    "cultivo_permanente_pct": 2.89,
+    "agricola_pct": 4.14,
+    "bosque_pct": 89.84,
+    "urbana_pct": 31.31,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "ISR",
+   "nombre": "Israel",
+   "continente": "Asia",
+   "area_km2": 20770,
+   "poblacion": 10122800,
+   "pib_usd": 509901495702,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 21640.0,
+    "arable_pct": 11.89,
+    "cultivo_permanente_pct": 4.39,
+    "agricola_pct": 23.79,
+    "bosque_pct": 6.84,
+    "urbana_pct": 91.58,
+    "mayor_ciudad_pct_urbana": 49.28
+   }
+  },
+  {
+   "iso": "ITA",
+   "nombre": "Italia",
+   "continente": "Europa",
+   "area_km2": 301336,
+   "poblacion": 58915656,
+   "pib_usd": 2254851212732,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 295720.0,
+    "arable_pct": 23.5,
+    "cultivo_permanente_pct": 8.11,
+    "agricola_pct": 43.63,
+    "bosque_pct": 31.82,
+    "urbana_pct": 69.68,
+    "mayor_ciudad_pct_urbana": 10.59
+   }
+  },
+  {
+   "iso": "JAM",
+   "nombre": "Jamaica",
+   "continente": "América",
+   "area_km2": 10991,
+   "poblacion": 2837077,
+   "pib_usd": 19423355367,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 10830.0,
+    "arable_pct": 11.54,
+    "cultivo_permanente_pct": 6.36,
+    "agricola_pct": 39.05,
+    "bosque_pct": 56.55,
+    "urbana_pct": 59.43,
+    "mayor_ciudad_pct_urbana": 35.81
+   }
+  },
+  {
+   "iso": "JPN",
+   "nombre": "Japón",
+   "continente": "Asia",
+   "area_km2": 377930,
+   "poblacion": 123366734,
+   "pib_usd": 4212945159781,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 364569.0,
+    "arable_pct": 11.04,
+    "cultivo_permanente_pct": 0.68,
+    "agricola_pct": 12.57,
+    "bosque_pct": 68.34,
+    "urbana_pct": 92.3,
+    "mayor_ciudad_pct_urbana": 32.53
+   }
+  },
+  {
+   "iso": "JOR",
+   "nombre": "Jordania",
+   "continente": "Asia",
+   "area_km2": 89342,
+   "poblacion": 11520684,
+   "pib_usd": 50813642349,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 88794.0,
+    "arable_pct": 2.26,
+    "cultivo_permanente_pct": 0.95,
+    "agricola_pct": 11.57,
+    "bosque_pct": 0.8,
+    "urbana_pct": 93.21,
+    "mayor_ciudad_pct_urbana": 21.17
+   }
+  },
+  {
+   "iso": "KAZ",
+   "nombre": "Kazajistán",
+   "continente": "Asia",
+   "area_km2": 2724900,
+   "poblacion": 20843754,
+   "pib_usd": 261421121086,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 2699700.0,
+    "arable_pct": 11.31,
+    "cultivo_permanente_pct": 0.05,
+    "agricola_pct": 79.19,
+    "bosque_pct": 1.3,
+    "urbana_pct": 62.39,
+    "mayor_ciudad_pct_urbana": 15.7
+   }
+  },
+  {
+   "iso": "KEN",
+   "nombre": "Kenia",
+   "continente": "África",
+   "area_km2": 580367,
+   "poblacion": 57532493,
+   "pib_usd": 107440575838,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 580876.0,
+    "arable_pct": 11.51,
+    "cultivo_permanente_pct": 1.86,
+    "agricola_pct": 50.04,
+    "bosque_pct": 6.63,
+    "urbana_pct": 32.21,
+    "mayor_ciudad_pct_urbana": 31.12
+   }
+  },
+  {
+   "iso": "KGZ",
+   "nombre": "Kirguizistán",
+   "continente": "Asia",
+   "area_km2": 199951,
+   "poblacion": 7343064,
+   "pib_usd": 13987627909,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 191800.0,
+    "arable_pct": 6.71,
+    "cultivo_permanente_pct": 0.39,
+    "agricola_pct": 53.96,
+    "bosque_pct": 6.55,
+    "urbana_pct": 34.75,
+    "mayor_ciudad_pct_urbana": 45.12
+   }
+  },
+  {
+   "iso": "KIR",
+   "nombre": "Kiribati",
+   "continente": "Oceanía",
+   "area_km2": 811,
+   "poblacion": 136488,
+   "pib_usd": 279034355,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 810.0,
+    "arable_pct": 2.47,
+    "cultivo_permanente_pct": 39.46,
+    "agricola_pct": 41.92,
+    "bosque_pct": 1.32,
+    "urbana_pct": 63.39,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "KWT",
+   "nombre": "Kuwait",
+   "continente": "Asia",
+   "area_km2": 17818,
+   "poblacion": 4865298,
+   "pib_usd": 161772221951,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 17820.0,
+    "arable_pct": 0.45,
+    "cultivo_permanente_pct": 0.34,
+    "agricola_pct": 8.42,
+    "bosque_pct": 0.35,
+    "urbana_pct": 100.0,
+    "mayor_ciudad_pct_urbana": 69.99
+   }
+  },
+  {
+   "iso": "LAO",
+   "nombre": "Laos",
+   "continente": "Asia",
+   "area_km2": 236800,
+   "poblacion": 7873046,
+   "pib_usd": 15843155731,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 230800.0,
+    "arable_pct": 5.3,
+    "cultivo_permanente_pct": 1.62,
+    "agricola_pct": 9.54,
+    "bosque_pct": 56.64,
+    "urbana_pct": 40.31,
+    "mayor_ciudad_pct_urbana": 23.82
+   }
+  },
+  {
+   "iso": "LSO",
+   "nombre": "Lesotho",
+   "continente": "África",
+   "area_km2": 30355,
+   "poblacion": 2363325,
+   "pib_usd": 2046039024,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 30360.0,
+    "arable_pct": 19.01,
+    "cultivo_permanente_pct": 0.2,
+    "agricola_pct": 92.89,
+    "bosque_pct": 1.14,
+    "urbana_pct": 44.67,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "LVA",
+   "nombre": "Letonia",
+   "continente": "Europa",
+   "area_km2": 64559,
+   "poblacion": 1847785,
+   "pib_usd": 43627078481,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 62230.0,
+    "arable_pct": 21.79,
+    "cultivo_permanente_pct": 0.16,
+    "agricola_pct": 31.67,
+    "bosque_pct": 55.61,
+    "urbana_pct": 68.63,
+    "mayor_ciudad_pct_urbana": 48.55
+   }
+  },
+  {
+   "iso": "LBR",
+   "nombre": "Liberia",
+   "continente": "África",
+   "area_km2": 111369,
+   "poblacion": 5731206,
+   "pib_usd": 4332000000,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 96320.0,
+    "arable_pct": 5.19,
+    "cultivo_permanente_pct": 2.21,
+    "agricola_pct": 20.1,
+    "bosque_pct": 66.1,
+    "urbana_pct": 56.08,
+    "mayor_ciudad_pct_urbana": 55.84
+   }
+  },
+  {
+   "iso": "LBY",
+   "nombre": "Libia",
+   "continente": "África",
+   "area_km2": 1759540,
+   "poblacion": 7458555,
+   "pib_usd": 50491722446,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 1759540.0,
+    "arable_pct": 0.98,
+    "cultivo_permanente_pct": 0.19,
+    "agricola_pct": 8.72,
+    "bosque_pct": 0.12,
+    "urbana_pct": 87.91,
+    "mayor_ciudad_pct_urbana": 18.35
+   }
+  },
+  {
+   "iso": "LIE",
+   "nombre": "Liechtenstein",
+   "continente": "Europa",
+   "area_km2": 160,
+   "poblacion": 41024,
+   "pib_usd": 7364654515,
+   "pib_anio": 2022,
+   "suelo": {
+    "tierra_km2": 160.0,
+    "arable_pct": 10.81,
+    "cultivo_permanente_pct": null,
+    "agricola_pct": 32.31,
+    "bosque_pct": 36.81,
+    "urbana_pct": 14.63,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "LTU",
+   "nombre": "Lituania",
+   "continente": "Europa",
+   "area_km2": 65300,
+   "poblacion": 2888774,
+   "pib_usd": 77836396963,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 62600.0,
+    "arable_pct": 36.68,
+    "cultivo_permanente_pct": 0.53,
+    "agricola_pct": 45.65,
+    "bosque_pct": 35.37,
+    "urbana_pct": 69.08,
+    "mayor_ciudad_pct_urbana": 27.14
+   }
+  },
+  {
+   "iso": "LUX",
+   "nombre": "Luxemburgo",
+   "continente": "Europa",
+   "area_km2": 2586,
+   "poblacion": 686970,
+   "pib_usd": 85755006124,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 2574.0,
+    "arable_pct": 23.8,
+    "cultivo_permanente_pct": 0.59,
+    "agricola_pct": 51.67,
+    "bosque_pct": 34.45,
+    "urbana_pct": 94.88,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "LBN",
+   "nombre": "Líbano",
+   "continente": "Asia",
+   "area_km2": 10452,
+   "poblacion": 5849421,
+   "pib_usd": 20992421949,
+   "pib_anio": 2022,
+   "suelo": {
+    "tierra_km2": 10230.0,
+    "arable_pct": 10.79,
+    "cultivo_permanente_pct": 13.78,
+    "agricola_pct": 63.67,
+    "bosque_pct": 13.8,
+    "urbana_pct": 90.96,
+    "mayor_ciudad_pct_urbana": 44.72
+   }
+  },
+  {
+   "iso": "MKD",
+   "nombre": "Macedonia del Norte",
+   "continente": "Europa",
+   "area_km2": 25713,
+   "poblacion": 1820909,
+   "pib_usd": 14761237042,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 25220.0,
+    "arable_pct": 16.18,
+    "cultivo_permanente_pct": 1.55,
+    "agricola_pct": 49.21,
+    "bosque_pct": 40.81,
+    "urbana_pct": 62.89,
+    "mayor_ciudad_pct_urbana": 54.21
+   }
+  },
+  {
+   "iso": "MDG",
+   "nombre": "Madagascar",
+   "continente": "África",
+   "area_km2": 587041,
+   "poblacion": 32740678,
+   "pib_usd": 16031702915,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 581800.0,
+    "arable_pct": 5.16,
+    "cultivo_permanente_pct": 1.1,
+    "agricola_pct": 70.36,
+    "bosque_pct": 17.27,
+    "urbana_pct": 32.9,
+    "mayor_ciudad_pct_urbana": 39.26
+   }
+  },
+  {
+   "iso": "MYS",
+   "nombre": "Malasia",
+   "continente": "Asia",
+   "area_km2": 330803,
+   "poblacion": 35977838,
+   "pib_usd": 399648828547,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 328550.0,
+    "arable_pct": 2.59,
+    "cultivo_permanente_pct": 21.35,
+    "agricola_pct": 24.79,
+    "bosque_pct": 57.66,
+    "urbana_pct": 77.39,
+    "mayor_ciudad_pct_urbana": 32.32
+   }
+  },
+  {
+   "iso": "MWI",
+   "nombre": "Malawi",
+   "continente": "África",
+   "area_km2": 118484,
+   "poblacion": 22216120,
+   "pib_usd": 14084341062,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 94280.0,
+    "arable_pct": 42.43,
+    "cultivo_permanente_pct": 2.99,
+    "agricola_pct": 65.04,
+    "bosque_pct": 22.0,
+    "urbana_pct": 17.59,
+    "mayor_ciudad_pct_urbana": 35.64
+   }
+  },
+  {
+   "iso": "MDV",
+   "nombre": "Maldivas",
+   "continente": "Asia",
+   "area_km2": 300,
+   "poblacion": 529676,
+   "pib_usd": 6600000000,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 298.0,
+    "arable_pct": 13.09,
+    "cultivo_permanente_pct": 3.36,
+    "agricola_pct": 19.8,
+    "bosque_pct": 12.48,
+    "urbana_pct": 42.51,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "MLI",
+   "nombre": "Mali",
+   "continente": "África",
+   "area_km2": 1240192,
+   "poblacion": 25198821,
+   "pib_usd": 20904898296,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 1220190.0,
+    "arable_pct": 5.5,
+    "cultivo_permanente_pct": 0.27,
+    "agricola_pct": 34.15,
+    "bosque_pct": 8.67,
+    "urbana_pct": 32.21,
+    "mayor_ciudad_pct_urbana": 39.18
+   }
+  },
+  {
+   "iso": "MLT",
+   "nombre": "Malta",
+   "continente": "Europa",
+   "area_km2": 316,
+   "poblacion": 579704,
+   "pib_usd": 20956999452,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 320.0,
+    "arable_pct": 22.15,
+    "cultivo_permanente_pct": 3.3,
+    "agricola_pct": 25.45,
+    "bosque_pct": 1.49,
+    "urbana_pct": 95.68,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "MAR",
+   "nombre": "Marruecos",
+   "continente": "África",
+   "area_km2": 446550,
+   "poblacion": 38430770,
+   "pib_usd": 141109373209,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 446300.0,
+    "arable_pct": 15.84,
+    "cultivo_permanente_pct": 4.33,
+    "agricola_pct": 67.22,
+    "bosque_pct": 12.76,
+    "urbana_pct": 63.13,
+    "mayor_ciudad_pct_urbana": 16.54
+   }
+  },
+  {
+   "iso": "MUS",
+   "nombre": "Mauricio",
+   "continente": "África",
+   "area_km2": 2040,
+   "poblacion": 1243741,
+   "pib_usd": 14397127281,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 1997.0,
+    "arable_pct": 35.31,
+    "cultivo_permanente_pct": 2.05,
+    "agricola_pct": 40.86,
+    "bosque_pct": 19.15,
+    "urbana_pct": 39.04,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "MRT",
+   "nombre": "Mauritania",
+   "continente": "África",
+   "area_km2": 1030700,
+   "poblacion": 5315065,
+   "pib_usd": 10452577063,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 1030700.0,
+    "arable_pct": 0.44,
+    "cultivo_permanente_pct": 0.01,
+    "agricola_pct": 38.53,
+    "bosque_pct": 0.99,
+    "urbana_pct": 61.49,
+    "mayor_ciudad_pct_urbana": 49.35
+   }
+  },
+  {
+   "iso": "FSM",
+   "nombre": "Micronesia",
+   "continente": "Oceanía",
+   "area_km2": 702,
+   "poblacion": 113683,
+   "pib_usd": 460000000,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 700.0,
+    "arable_pct": 3.42,
+    "cultivo_permanente_pct": null,
+    "agricola_pct": 7.7,
+    "bosque_pct": 92.07,
+    "urbana_pct": 22.48,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "MDA",
+   "nombre": "Moldavia",
+   "continente": "Europa",
+   "area_km2": 33846,
+   "poblacion": 2360527,
+   "pib_usd": 16539436547,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 32930.0,
+    "arable_pct": 56.39,
+    "cultivo_permanente_pct": 6.77,
+    "agricola_pct": 73.23,
+    "bosque_pct": 11.26,
+    "urbana_pct": 43.73,
+    "mayor_ciudad_pct_urbana": 46.92
+   }
+  },
+  {
+   "iso": "MNG",
+   "nombre": "Mongolia",
+   "continente": "Asia",
+   "area_km2": 1564110,
+   "poblacion": 3568978,
+   "pib_usd": 19872180370,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 1558500.0,
+    "arable_pct": 0.72,
+    "cultivo_permanente_pct": 0.0,
+    "agricola_pct": 68.81,
+    "bosque_pct": 9.1,
+    "urbana_pct": 71.15,
+    "mayor_ciudad_pct_urbana": 67.93
+   }
+  },
+  {
+   "iso": "MNE",
+   "nombre": "Montenegro",
+   "continente": "Europa",
+   "area_km2": 13812,
+   "poblacion": 623129,
+   "pib_usd": 7404541965,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 13450.0,
+    "arable_pct": 0.72,
+    "cultivo_permanente_pct": 0.7,
+    "agricola_pct": 18.46,
+    "bosque_pct": 61.49,
+    "urbana_pct": 65.61,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "MOZ",
+   "nombre": "Mozambique",
+   "continente": "África",
+   "area_km2": 801590,
+   "poblacion": 35631653,
+   "pib_usd": 20624597847,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 786380.0,
+    "arable_pct": 10.53,
+    "cultivo_permanente_pct": 0.49,
+    "agricola_pct": 56.11,
+    "bosque_pct": 41.34,
+    "urbana_pct": 37.21,
+    "mayor_ciudad_pct_urbana": 14.97
+   }
+  },
+  {
+   "iso": "MMR",
+   "nombre": "Myanmar",
+   "continente": "Asia",
+   "area_km2": 676578,
+   "poblacion": 54850648,
+   "pib_usd": 64815031669,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 652670.0,
+    "arable_pct": 16.89,
+    "cultivo_permanente_pct": 2.31,
+    "agricola_pct": 19.93,
+    "bosque_pct": 41.96,
+    "urbana_pct": 30.58,
+    "mayor_ciudad_pct_urbana": 34.65
+   }
+  },
+  {
+   "iso": "MEX",
+   "nombre": "México",
+   "continente": "América",
+   "area_km2": 1964375,
+   "poblacion": 131946900,
+   "pib_usd": 1788886821047,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 1943950.0,
+    "arable_pct": 10.29,
+    "cultivo_permanente_pct": 2.26,
+    "agricola_pct": 50.63,
+    "bosque_pct": 34.15,
+    "urbana_pct": 80.04,
+    "mayor_ciudad_pct_urbana": 21.54
+   }
+  },
+  {
+   "iso": "MCO",
+   "nombre": "Mónaco",
+   "continente": "Europa",
+   "area_km2": 2,
+   "poblacion": 38341,
+   "pib_usd": 8784002932,
+   "pib_anio": 2022,
+   "suelo": {
+    "tierra_km2": 2.0,
+    "arable_pct": null,
+    "cultivo_permanente_pct": null,
+    "agricola_pct": null,
+    "bosque_pct": null,
+    "urbana_pct": 100.0,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "NAM",
+   "nombre": "Namibia",
+   "continente": "África",
+   "area_km2": 825615,
+   "poblacion": 3092816,
+   "pib_usd": 12351024844,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 823290.0,
+    "arable_pct": 0.97,
+    "cultivo_permanente_pct": 0.02,
+    "agricola_pct": 47.14,
+    "bosque_pct": 9.77,
+    "urbana_pct": 50.87,
+    "mayor_ciudad_pct_urbana": 32.5
+   }
+  },
+  {
+   "iso": "NRU",
+   "nombre": "Nauru",
+   "continente": "Oceanía",
+   "area_km2": 21,
+   "poblacion": 12025,
+   "pib_usd": 154127798,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 20.0,
+    "arable_pct": null,
+    "cultivo_permanente_pct": 16.19,
+    "agricola_pct": 16.19,
+    "bosque_pct": null,
+    "urbana_pct": 100.0,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "NPL",
+   "nombre": "Nepal",
+   "continente": "Asia",
+   "area_km2": 147181,
+   "poblacion": 29618118,
+   "pib_usd": 40908073367,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 143350.0,
+    "arable_pct": 12.58,
+    "cultivo_permanente_pct": 1.01,
+    "agricola_pct": 26.12,
+    "bosque_pct": 43.6,
+    "urbana_pct": 67.0,
+    "mayor_ciudad_pct_urbana": 8.43
+   }
+  },
+  {
+   "iso": "NIC",
+   "nombre": "Nicaragua",
+   "continente": "América",
+   "area_km2": 130373,
+   "poblacion": 7007502,
+   "pib_usd": 17829215284,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 120340.0,
+    "arable_pct": null,
+    "cultivo_permanente_pct": null,
+    "agricola_pct": null,
+    "bosque_pct": null,
+    "urbana_pct": 59.44,
+    "mayor_ciudad_pct_urbana": 26.91
+   }
+  },
+  {
+   "iso": "NGA",
+   "nombre": "Nigeria",
+   "continente": "África",
+   "area_km2": 923768,
+   "poblacion": 237527782,
+   "pib_usd": 362814951696,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 910770.0,
+    "arable_pct": 40.83,
+    "cultivo_permanente_pct": 8.62,
+    "agricola_pct": 77.09,
+    "bosque_pct": 18.95,
+    "urbana_pct": 63.78,
+    "mayor_ciudad_pct_urbana": 11.33
+   }
+  },
+  {
+   "iso": "NOR",
+   "nombre": "Noruega",
+   "continente": "Europa",
+   "area_km2": 323802,
+   "poblacion": 5610870,
+   "pib_usd": 485513316504,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 364270.0,
+    "arable_pct": 2.21,
+    "cultivo_permanente_pct": 0.01,
+    "agricola_pct": 2.7,
+    "bosque_pct": 33.25,
+    "urbana_pct": 83.57,
+    "mayor_ciudad_pct_urbana": 23.79
+   }
+  },
+  {
+   "iso": "NZL",
+   "nombre": "Nueva Zelanda",
+   "continente": "Oceanía",
+   "area_km2": 270467,
+   "poblacion": 5324700,
+   "pib_usd": 253465703232,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 263310.0,
+    "arable_pct": 1.98,
+    "cultivo_permanente_pct": 0.28,
+    "agricola_pct": 36.81,
+    "bosque_pct": 38.87,
+    "urbana_pct": 84.0,
+    "mayor_ciudad_pct_urbana": 38.26
+   }
+  },
+  {
+   "iso": "NER",
+   "nombre": "Níger",
+   "continente": "África",
+   "area_km2": 1267000,
+   "poblacion": 27917831,
+   "pib_usd": 16819170421,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 1266700.0,
+    "arable_pct": 13.99,
+    "cultivo_permanente_pct": 0.09,
+    "agricola_pct": 36.8,
+    "bosque_pct": 0.84,
+    "urbana_pct": 18.37,
+    "mayor_ciudad_pct_urbana": 30.44
+   }
+  },
+  {
+   "iso": "OMN",
+   "nombre": "Omán",
+   "continente": "Asia",
+   "area_km2": 309500,
+   "poblacion": 5494691,
+   "pib_usd": 108192457737,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 309500.0,
+    "arable_pct": 0.3,
+    "cultivo_permanente_pct": 0.12,
+    "agricola_pct": 4.78,
+    "bosque_pct": 0.01,
+    "urbana_pct": 79.48,
+    "mayor_ciudad_pct_urbana": 38.99
+   }
+  },
+  {
+   "iso": "PAK",
+   "nombre": "Pakistán",
+   "continente": "Asia",
+   "area_km2": 881912,
+   "poblacion": 255219554,
+   "pib_usd": 338368455318,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 770880.0,
+    "arable_pct": 39.81,
+    "cultivo_permanente_pct": 0.91,
+    "agricola_pct": 47.2,
+    "bosque_pct": 4.11,
+    "urbana_pct": 39.53,
+    "mayor_ciudad_pct_urbana": 17.92
+   }
+  },
+  {
+   "iso": "PLW",
+   "nombre": "Palau",
+   "continente": "Oceanía",
+   "area_km2": 459,
+   "poblacion": 17663,
+   "pib_usd": 263020734,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 460.0,
+    "arable_pct": 0.65,
+    "cultivo_permanente_pct": 4.35,
+    "agricola_pct": 9.35,
+    "bosque_pct": 90.83,
+    "urbana_pct": 79.28,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "PSE",
+   "nombre": "Palestina",
+   "continente": "Asia",
+   "area_km2": 6220,
+   "poblacion": 5413596,
+   "pib_usd": 17396300000,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 6025.0,
+    "arable_pct": 6.95,
+    "cultivo_permanente_pct": 11.83,
+    "agricola_pct": 64.93,
+    "bosque_pct": 1.84,
+    "urbana_pct": 87.38,
+    "mayor_ciudad_pct_urbana": 17.41
+   }
+  },
+  {
+   "iso": "PAN",
+   "nombre": "Panamá",
+   "continente": "América",
+   "area_km2": 75417,
+   "poblacion": 4571189,
+   "pib_usd": 83382400000,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 74180.0,
+    "arable_pct": 6.71,
+    "cultivo_permanente_pct": 1.28,
+    "agricola_pct": 23.08,
+    "bosque_pct": 62.25,
+    "urbana_pct": 66.15,
+    "mayor_ciudad_pct_urbana": 67.94
+   }
+  },
+  {
+   "iso": "PNG",
+   "nombre": "Papúa Nueva Guinea",
+   "continente": "Oceanía",
+   "area_km2": 462840,
+   "poblacion": 10762817,
+   "pib_usd": 30932496250,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 452860.0,
+    "arable_pct": 0.73,
+    "cultivo_permanente_pct": 1.95,
+    "agricola_pct": 3.1,
+    "bosque_pct": 75.15,
+    "urbana_pct": 15.78,
+    "mayor_ciudad_pct_urbana": 25.43
+   }
+  },
+  {
+   "iso": "PRY",
+   "nombre": "Paraguay",
+   "continente": "América",
+   "area_km2": 406752,
+   "poblacion": 7013078,
+   "pib_usd": 42956263544,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 396012.0,
+    "arable_pct": 11.52,
+    "cultivo_permanente_pct": 0.21,
+    "agricola_pct": 54.11,
+    "bosque_pct": 36.52,
+    "urbana_pct": 70.39,
+    "mayor_ciudad_pct_urbana": 73.48
+   }
+  },
+  {
+   "iso": "NLD",
+   "nombre": "Países Bajos",
+   "continente": "Europa",
+   "area_km2": 41850,
+   "poblacion": 18087633,
+   "pib_usd": 1118124749886,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 33670.0,
+    "arable_pct": 29.79,
+    "cultivo_permanente_pct": 1.04,
+    "agricola_pct": 53.43,
+    "bosque_pct": 10.96,
+    "urbana_pct": 95.94,
+    "mayor_ciudad_pct_urbana": 6.85
+   }
+  },
+  {
+   "iso": "PER",
+   "nombre": "Perú",
+   "continente": "América",
+   "area_km2": 1285216,
+   "poblacion": 34576665,
+   "pib_usd": 267603248655,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 1280000.0,
+    "arable_pct": 3.06,
+    "cultivo_permanente_pct": 1.78,
+    "agricola_pct": 18.98,
+    "bosque_pct": 52.7,
+    "urbana_pct": 85.6,
+    "mayor_ciudad_pct_urbana": 38.91
+   }
+  },
+  {
+   "iso": "POL",
+   "nombre": "Polonia",
+   "continente": "Europa",
+   "area_km2": 312679,
+   "poblacion": 36435861,
+   "pib_usd": 811229100688,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 306270.0,
+    "arable_pct": 36.55,
+    "cultivo_permanente_pct": 1.12,
+    "agricola_pct": 46.21,
+    "bosque_pct": 31.0,
+    "urbana_pct": 60.09,
+    "mayor_ciudad_pct_urbana": 8.22
+   }
+  },
+  {
+   "iso": "PRT",
+   "nombre": "Portugal",
+   "continente": "Europa",
+   "area_km2": 92090,
+   "poblacion": 10804871,
+   "pib_usd": 287080013574,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 91606.0,
+    "arable_pct": 9.33,
+    "cultivo_permanente_pct": 9.62,
+    "agricola_pct": 41.34,
+    "bosque_pct": 36.65,
+    "urbana_pct": 61.5,
+    "mayor_ciudad_pct_urbana": 45.58
+   }
+  },
+  {
+   "iso": "COD",
+   "nombre": "R. D. del Congo",
+   "continente": "África",
+   "area_km2": 2344858,
+   "poblacion": 112832473,
+   "pib_usd": 66383287003,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 2267050.0,
+    "arable_pct": 7.29,
+    "cultivo_permanente_pct": 0.88,
+    "agricola_pct": 16.19,
+    "bosque_pct": 61.52,
+    "urbana_pct": 45.11,
+    "mayor_ciudad_pct_urbana": 34.93
+   }
+  },
+  {
+   "iso": "GBR",
+   "nombre": "Reino Unido",
+   "continente": "Europa",
+   "area_km2": 242900,
+   "poblacion": 69487000,
+   "pib_usd": 3340032380668,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 241930.0,
+    "arable_pct": 25.31,
+    "cultivo_permanente_pct": 0.18,
+    "agricola_pct": 69.21,
+    "bosque_pct": 13.5,
+    "urbana_pct": 83.32,
+    "mayor_ciudad_pct_urbana": 17.0
+   }
+  },
+  {
+   "iso": "CAF",
+   "nombre": "República Centroafricana",
+   "continente": "África",
+   "area_km2": 622984,
+   "poblacion": 5513282,
+   "pib_usd": 2555492085,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 622980.0,
+    "arable_pct": 2.89,
+    "cultivo_permanente_pct": 1.65,
+    "agricola_pct": 9.34,
+    "bosque_pct": 72.46,
+    "urbana_pct": 44.55,
+    "mayor_ciudad_pct_urbana": 41.37
+   }
+  },
+  {
+   "iso": "DOM",
+   "nombre": "República Dominicana",
+   "continente": "América",
+   "area_km2": 48671,
+   "poblacion": 11520487,
+   "pib_usd": 121444279314,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 48198.0,
+    "arable_pct": 21.66,
+    "cultivo_permanente_pct": 5.99,
+    "agricola_pct": 51.48,
+    "bosque_pct": 46.7,
+    "urbana_pct": 72.52,
+    "mayor_ciudad_pct_urbana": 43.67
+   }
+  },
+  {
+   "iso": "RWA",
+   "nombre": "Ruanda",
+   "continente": "África",
+   "area_km2": 26338,
+   "poblacion": 14569341,
+   "pib_usd": 14097768648,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 24670.0,
+    "arable_pct": 48.92,
+    "cultivo_permanente_pct": 21.51,
+    "agricola_pct": 75.67,
+    "bosque_pct": 26.09,
+    "urbana_pct": 30.91,
+    "mayor_ciudad_pct_urbana": 29.53
+   }
+  },
+  {
+   "iso": "ROU",
+   "nombre": "Rumania",
+   "continente": "Europa",
+   "area_km2": 238391,
+   "poblacion": 19020271,
+   "pib_usd": 351002579630,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 230080.0,
+    "arable_pct": 36.42,
+    "cultivo_permanente_pct": 1.76,
+    "agricola_pct": 55.15,
+    "bosque_pct": 30.21,
+    "urbana_pct": 52.17,
+    "mayor_ciudad_pct_urbana": 17.72
+   }
+  },
+  {
+   "iso": "RUS",
+   "nombre": "Rusia",
+   "continente": "Europa",
+   "area_km2": 17098242,
+   "poblacion": 143513328,
+   "pib_usd": 2021421476035,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 16376870.0,
+    "arable_pct": 7.43,
+    "cultivo_permanente_pct": 0.12,
+    "agricola_pct": 13.17,
+    "bosque_pct": 50.79,
+    "urbana_pct": 75.25,
+    "mayor_ciudad_pct_urbana": 11.79
+   }
+  },
+  {
+   "iso": "WSM",
+   "nombre": "Samoa",
+   "continente": "Oceanía",
+   "area_km2": 2842,
+   "poblacion": 219306,
+   "pib_usd": 934100336,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 2780.0,
+    "arable_pct": 4.06,
+    "cultivo_permanente_pct": 11.41,
+    "agricola_pct": 17.77,
+    "bosque_pct": 57.64,
+    "urbana_pct": 17.51,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "KNA",
+   "nombre": "San Cristóbal y Nieves",
+   "continente": "América",
+   "area_km2": 261,
+   "poblacion": 46922,
+   "pib_usd": 1077033111,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 260.0,
+    "arable_pct": 19.16,
+    "cultivo_permanente_pct": 0.38,
+    "agricola_pct": 22.99,
+    "bosque_pct": 42.15,
+    "urbana_pct": 31.9,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "SMR",
+   "nombre": "San Marino",
+   "continente": "Europa",
+   "area_km2": 61,
+   "poblacion": 34109,
+   "pib_usd": 1855382833,
+   "pib_anio": 2021,
+   "suelo": {
+    "tierra_km2": 60.0,
+    "arable_pct": 20.54,
+    "cultivo_permanente_pct": 5.11,
+    "agricola_pct": 42.32,
+    "bosque_pct": 16.34,
+    "urbana_pct": 97.19,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "VCT",
+   "nombre": "San Vicente y Granadinas",
+   "continente": "América",
+   "area_km2": 389,
+   "poblacion": 99924,
+   "pib_usd": 1065962963,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 390.0,
+    "arable_pct": 5.14,
+    "cultivo_permanente_pct": 7.71,
+    "agricola_pct": 18.0,
+    "bosque_pct": 73.42,
+    "urbana_pct": 47.98,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "LCA",
+   "nombre": "Santa Lucía",
+   "continente": "América",
+   "area_km2": 616,
+   "poblacion": 180149,
+   "pib_usd": 2519925939,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 610.0,
+    "arable_pct": 4.36,
+    "cultivo_permanente_pct": 11.31,
+    "agricola_pct": 16.28,
+    "bosque_pct": 53.75,
+    "urbana_pct": 29.1,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "STP",
+   "nombre": "Santo Tomé y Príncipe",
+   "continente": "África",
+   "area_km2": 964,
+   "poblacion": 240254,
+   "pib_usd": 603240749,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 960.0,
+    "arable_pct": 4.17,
+    "cultivo_permanente_pct": 40.9,
+    "agricola_pct": 46.1,
+    "bosque_pct": 57.55,
+    "urbana_pct": 69.17,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "SEN",
+   "nombre": "Senegal",
+   "continente": "África",
+   "area_km2": 196722,
+   "poblacion": 18931966,
+   "pib_usd": 31013986429,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 192530.0,
+    "arable_pct": 19.89,
+    "cultivo_permanente_pct": 0.43,
+    "agricola_pct": 49.41,
+    "bosque_pct": 45.01,
+    "urbana_pct": 55.77,
+    "mayor_ciudad_pct_urbana": 34.65
+   }
+  },
+  {
+   "iso": "SRB",
+   "nombre": "Serbia",
+   "continente": "Europa",
+   "area_km2": 88361,
+   "poblacion": 6549143,
+   "pib_usd": 75187125427,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 84090.0,
+    "arable_pct": 29.01,
+    "cultivo_permanente_pct": 2.42,
+    "agricola_pct": 38.1,
+    "bosque_pct": 39.22,
+    "urbana_pct": 62.64,
+    "mayor_ciudad_pct_urbana": 34.44
+   }
+  },
+  {
+   "iso": "SYC",
+   "nombre": "Seychelles",
+   "continente": "África",
+   "area_km2": 452,
+   "poblacion": 122730,
+   "pib_usd": 2141450171,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 460.0,
+    "arable_pct": 0.33,
+    "cultivo_permanente_pct": 3.04,
+    "agricola_pct": 3.37,
+    "bosque_pct": 58.51,
+    "urbana_pct": 45.48,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "SLE",
+   "nombre": "Sierra Leone",
+   "continente": "África",
+   "area_km2": 71740,
+   "poblacion": 8819794,
+   "pib_usd": 3809832237,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 72180.0,
+    "arable_pct": 21.95,
+    "cultivo_permanente_pct": 2.82,
+    "agricola_pct": 55.24,
+    "bosque_pct": 34.03,
+    "urbana_pct": 45.93,
+    "mayor_ciudad_pct_urbana": 34.25
+   }
+  },
+  {
+   "iso": "SGP",
+   "nombre": "Singapur",
+   "continente": "Asia",
+   "area_km2": 710,
+   "poblacion": 6111175,
+   "pib_usd": 501427500080,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 718.0,
+    "arable_pct": 0.77,
+    "cultivo_permanente_pct": 0.14,
+    "agricola_pct": 0.91,
+    "bosque_pct": 21.8,
+    "urbana_pct": 100.0,
+    "mayor_ciudad_pct_urbana": 100.0
+   }
+  },
+  {
+   "iso": "SYR",
+   "nombre": "Siria",
+   "continente": "Asia",
+   "area_km2": 185180,
+   "poblacion": 25620427,
+   "pib_usd": 8980060819,
+   "pib_anio": 2021,
+   "suelo": {
+    "tierra_km2": 183630.0,
+    "arable_pct": 23.96,
+    "cultivo_permanente_pct": 5.71,
+    "agricola_pct": 74.13,
+    "bosque_pct": 2.87,
+    "urbana_pct": 72.08,
+    "mayor_ciudad_pct_urbana": 15.16
+   }
+  },
+  {
+   "iso": "SOM",
+   "nombre": "Somalia",
+   "continente": "África",
+   "area_km2": 637657,
+   "poblacion": 19654739,
+   "pib_usd": 11679800110,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 627340.0,
+    "arable_pct": 1.75,
+    "cultivo_permanente_pct": 0.05,
+    "agricola_pct": 70.34,
+    "bosque_pct": 7.82,
+    "urbana_pct": 55.14,
+    "mayor_ciudad_pct_urbana": 26.26
+   }
+  },
+  {
+   "iso": "LKA",
+   "nombre": "Sri Lanka",
+   "continente": "Asia",
+   "area_km2": 65610,
+   "poblacion": 21756000,
+   "pib_usd": 84356860421,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 61860.0,
+    "arable_pct": 22.18,
+    "cultivo_permanente_pct": 19.48,
+    "agricola_pct": 48.77,
+    "bosque_pct": 34.36,
+    "urbana_pct": 20.45,
+    "mayor_ciudad_pct_urbana": 14.55
+   }
+  },
+  {
+   "iso": "ZAF",
+   "nombre": "Sudáfrica",
+   "continente": "África",
+   "area_km2": 1221037,
+   "poblacion": 64747319,
+   "pib_usd": 377781600986,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 1213090.0,
+    "arable_pct": 9.89,
+    "cultivo_permanente_pct": 0.34,
+    "agricola_pct": 79.42,
+    "bosque_pct": 18.79,
+    "urbana_pct": 63.82,
+    "mayor_ciudad_pct_urbana": 15.6
+   }
+  },
+  {
+   "iso": "SDN",
+   "nombre": "Sudán",
+   "continente": "África",
+   "area_km2": 1886068,
+   "poblacion": 51662147,
+   "pib_usd": 109327023589,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 1868000.0,
+    "arable_pct": 11.24,
+    "cultivo_permanente_pct": 0.12,
+    "agricola_pct": 60.31,
+    "bosque_pct": 11.86,
+    "urbana_pct": 34.93,
+    "mayor_ciudad_pct_urbana": 37.42
+   }
+  },
+  {
+   "iso": "SSD",
+   "nombre": "Sudán del Sur",
+   "continente": "África",
+   "area_km2": 619745,
+   "poblacion": 12188788,
+   "pib_usd": 11997800760,
+   "pib_anio": 2015,
+   "suelo": {
+    "tierra_km2": 631930.0,
+    "arable_pct": 3.79,
+    "cultivo_permanente_pct": 0.13,
+    "agricola_pct": 44.71,
+    "bosque_pct": 11.33,
+    "urbana_pct": 21.68,
+    "mayor_ciudad_pct_urbana": 18.92
+   }
+  },
+  {
+   "iso": "SWE",
+   "nombre": "Suecia",
+   "continente": "Europa",
+   "area_km2": 450295,
+   "poblacion": 10596620,
+   "pib_usd": 593267701033,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 407270.0,
+    "arable_pct": 6.18,
+    "cultivo_permanente_pct": 0.01,
+    "agricola_pct": 7.3,
+    "bosque_pct": 68.59,
+    "urbana_pct": 89.08,
+    "mayor_ciudad_pct_urbana": 18.41
+   }
+  },
+  {
+   "iso": "CHE",
+   "nombre": "Suiza",
+   "continente": "Europa",
+   "area_km2": 41284,
+   "poblacion": 9092436,
+   "pib_usd": 884940402230,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 39510.0,
+    "arable_pct": 10.08,
+    "cultivo_permanente_pct": 0.64,
+    "agricola_pct": 37.72,
+    "bosque_pct": 32.02,
+    "urbana_pct": 85.73,
+    "mayor_ciudad_pct_urbana": 18.67
+   }
+  },
+  {
+   "iso": "SUR",
+   "nombre": "Surinam",
+   "continente": "América",
+   "area_km2": 163820,
+   "poblacion": 639850,
+   "pib_usd": 3782437296,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 160508.0,
+    "arable_pct": 0.34,
+    "cultivo_permanente_pct": 0.02,
+    "agricola_pct": 0.47,
+    "bosque_pct": 91.54,
+    "urbana_pct": 65.79,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "THA",
+   "nombre": "Tailandia",
+   "continente": "Asia",
+   "area_km2": 513120,
+   "poblacion": 71619863,
+   "pib_usd": 514944993834,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 510890.0,
+    "arable_pct": 30.79,
+    "cultivo_permanente_pct": 12.26,
+    "agricola_pct": 43.27,
+    "bosque_pct": 38.73,
+    "urbana_pct": 62.8,
+    "mayor_ciudad_pct_urbana": 25.33
+   }
+  },
+  {
+   "iso": "TWN",
+   "nombre": "Taiwán",
+   "continente": "Asia",
+   "area_km2": 36193,
+   "poblacion": 23110000,
+   "pib_usd": 756600000000,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": null,
+    "arable_pct": null,
+    "cultivo_permanente_pct": null,
+    "agricola_pct": null,
+    "bosque_pct": null,
+    "urbana_pct": null,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "TZA",
+   "nombre": "Tanzania",
+   "continente": "África",
+   "area_km2": 945087,
+   "poblacion": 70545865,
+   "pib_usd": 79158286334,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 885800.0,
+    "arable_pct": 15.5,
+    "cultivo_permanente_pct": 2.49,
+    "agricola_pct": 45.11,
+    "bosque_pct": 49.63,
+    "urbana_pct": 36.88,
+    "mayor_ciudad_pct_urbana": 32.9
+   }
+  },
+  {
+   "iso": "TJK",
+   "nombre": "Tayikistán",
+   "continente": "Asia",
+   "area_km2": 143100,
+   "poblacion": 10786734,
+   "pib_usd": 12060602009,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 138790.0,
+    "arable_pct": 6.09,
+    "cultivo_permanente_pct": 1.48,
+    "agricola_pct": 28.01,
+    "bosque_pct": 3.06,
+    "urbana_pct": 26.16,
+    "mayor_ciudad_pct_urbana": 36.85
+   }
+  },
+  {
+   "iso": "TLS",
+   "nombre": "Timor Oriental",
+   "continente": "Asia",
+   "area_km2": 14874,
+   "poblacion": 1418517,
+   "pib_usd": 2243142908,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 14870.0,
+    "arable_pct": 7.5,
+    "cultivo_permanente_pct": 5.37,
+    "agricola_pct": 22.96,
+    "bosque_pct": 70.96,
+    "urbana_pct": 28.79,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "TGO",
+   "nombre": "Togo",
+   "continente": "África",
+   "area_km2": 56785,
+   "poblacion": 8591626,
+   "pib_usd": 9171261835,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 54390.0,
+    "arable_pct": 48.72,
+    "cultivo_permanente_pct": 1.97,
+    "agricola_pct": 69.08,
+    "bosque_pct": 22.46,
+    "urbana_pct": 44.39,
+    "mayor_ciudad_pct_urbana": 55.29
+   }
+  },
+  {
+   "iso": "TON",
+   "nombre": "Tonga",
+   "continente": "Oceanía",
+   "area_km2": 747,
+   "poblacion": 103742,
+   "pib_usd": 500274898,
+   "pib_anio": 2022,
+   "suelo": {
+    "tierra_km2": 720.0,
+    "arable_pct": 30.26,
+    "cultivo_permanente_pct": 12.65,
+    "agricola_pct": 48.47,
+    "bosque_pct": 12.13,
+    "urbana_pct": 21.16,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "TTO",
+   "nombre": "Trinidad y Tobago",
+   "continente": "América",
+   "area_km2": 5130,
+   "poblacion": 1367764,
+   "pib_usd": 28139944790,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 5130.0,
+    "arable_pct": 5.85,
+    "cultivo_permanente_pct": 4.55,
+    "agricola_pct": 11.61,
+    "bosque_pct": 44.16,
+    "urbana_pct": 53.97,
+    "mayor_ciudad_pct_urbana": 74.04
+   }
+  },
+  {
+   "iso": "TKM",
+   "nombre": "Turkmenistán",
+   "continente": "Asia",
+   "area_km2": 488100,
+   "poblacion": 7618847,
+   "pib_usd": 59887334844,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 469930.0,
+    "arable_pct": 3.49,
+    "cultivo_permanente_pct": 0.08,
+    "agricola_pct": 84.32,
+    "bosque_pct": 4.96,
+    "urbana_pct": 47.11,
+    "mayor_ciudad_pct_urbana": 26.22
+   }
+  },
+  {
+   "iso": "TUR",
+   "nombre": "Turquía",
+   "continente": "Asia",
+   "area_km2": 783562,
+   "poblacion": 85878556,
+   "pib_usd": 1108022373260,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 769630.0,
+    "arable_pct": 26.28,
+    "cultivo_permanente_pct": 4.94,
+    "agricola_pct": 50.21,
+    "bosque_pct": 29.48,
+    "urbana_pct": 89.49,
+    "mayor_ciudad_pct_urbana": 21.13
+   }
+  },
+  {
+   "iso": "TUV",
+   "nombre": "Tuvalu",
+   "continente": "Oceanía",
+   "area_km2": 26,
+   "poblacion": 9492,
+   "pib_usd": 62280312,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 30.0,
+    "arable_pct": null,
+    "cultivo_permanente_pct": 100.0,
+    "agricola_pct": 100.0,
+    "bosque_pct": 39.62,
+    "urbana_pct": 65.45,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "TUN",
+   "nombre": "Túnez",
+   "continente": "África",
+   "area_km2": 163610,
+   "poblacion": 12348573,
+   "pib_usd": 48529595417,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 155360.0,
+    "arable_pct": 17.84,
+    "cultivo_permanente_pct": 13.64,
+    "agricola_pct": 62.09,
+    "bosque_pct": 4.44,
+    "urbana_pct": 70.7,
+    "mayor_ciudad_pct_urbana": 29.15
+   }
+  },
+  {
+   "iso": "UKR",
+   "nombre": "Ucrania",
+   "continente": "Europa",
+   "area_km2": 603500,
+   "poblacion": 38980376,
+   "pib_usd": 178757021387,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 579400.0,
+    "arable_pct": 56.82,
+    "cultivo_permanente_pct": 1.47,
+    "agricola_pct": 71.3,
+    "bosque_pct": 17.35,
+    "urbana_pct": 69.6,
+    "mayor_ciudad_pct_urbana": 11.13
+   }
+  },
+  {
+   "iso": "UGA",
+   "nombre": "Uganda",
+   "continente": "África",
+   "area_km2": 241550,
+   "poblacion": 51384894,
+   "pib_usd": 49272882214,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 200520.0,
+    "arable_pct": 43.64,
+    "cultivo_permanente_pct": 13.7,
+    "agricola_pct": 80.28,
+    "bosque_pct": 11.95,
+    "urbana_pct": 31.94,
+    "mayor_ciudad_pct_urbana": 25.99
+   }
+  },
+  {
+   "iso": "URY",
+   "nombre": "Uruguay",
+   "continente": "América",
+   "area_km2": 181034,
+   "poblacion": 3384688,
+   "pib_usd": 77240831587,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 175020.0,
+    "arable_pct": 12.39,
+    "cultivo_permanente_pct": 0.22,
+    "agricola_pct": 87.36,
+    "bosque_pct": 11.46,
+    "urbana_pct": 95.65,
+    "mayor_ciudad_pct_urbana": 55.23
+   }
+  },
+  {
+   "iso": "UZB",
+   "nombre": "Uzbekistán",
+   "continente": "Asia",
+   "area_km2": 447400,
+   "poblacion": 37053428,
+   "pib_usd": 90889149307,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 440650.0,
+    "arable_pct": 9.23,
+    "cultivo_permanente_pct": 1.04,
+    "agricola_pct": 58.95,
+    "bosque_pct": 8.79,
+    "urbana_pct": 51.02,
+    "mayor_ciudad_pct_urbana": 14.1
+   }
+  },
+  {
+   "iso": "VUT",
+   "nombre": "Vanuatu",
+   "continente": "Oceanía",
+   "area_km2": 12189,
+   "poblacion": 335169,
+   "pib_usd": 1126313359,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 12190.0,
+    "arable_pct": 1.64,
+    "cultivo_permanente_pct": 8.18,
+    "agricola_pct": 13.26,
+    "bosque_pct": 74.64,
+    "urbana_pct": 22.32,
+    "mayor_ciudad_pct_urbana": null
+   }
+  },
+  {
+   "iso": "VEN",
+   "nombre": "Venezuela",
+   "continente": "América",
+   "area_km2": 916445,
+   "poblacion": 28516896,
+   "pib_usd": 482359318768,
+   "pib_anio": 2014,
+   "suelo": {
+    "tierra_km2": 882050.0,
+    "arable_pct": 2.95,
+    "cultivo_permanente_pct": 0.79,
+    "agricola_pct": 24.42,
+    "bosque_pct": 53.44,
+    "urbana_pct": 89.32,
+    "mayor_ciudad_pct_urbana": 11.84
+   }
+  },
+  {
+   "iso": "VNM",
+   "nombre": "Vietnam",
+   "continente": "Asia",
+   "area_km2": 331212,
+   "poblacion": 101598527,
+   "pib_usd": 429716969050,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 313429.0,
+    "arable_pct": 21.47,
+    "cultivo_permanente_pct": 15.7,
+    "agricola_pct": 39.21,
+    "bosque_pct": 47.12,
+    "urbana_pct": 38.83,
+    "mayor_ciudad_pct_urbana": 24.88
+   }
+  },
+  {
+   "iso": "YEM",
+   "nombre": "Yemen",
+   "continente": "Asia",
+   "area_km2": 527968,
+   "poblacion": 41773878,
+   "pib_usd": 21606160663,
+   "pib_anio": 2018,
+   "suelo": {
+    "tierra_km2": 527970.0,
+    "arable_pct": 2.16,
+    "cultivo_permanente_pct": 0.59,
+    "agricola_pct": 44.42,
+    "bosque_pct": 1.04,
+    "urbana_pct": 37.03,
+    "mayor_ciudad_pct_urbana": 22.8
+   }
+  },
+  {
+   "iso": "ZMB",
+   "nombre": "Zambia",
+   "continente": "África",
+   "area_km2": 752612,
+   "poblacion": 21913874,
+   "pib_usd": 28162630954,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 743390.0,
+    "arable_pct": 5.11,
+    "cultivo_permanente_pct": 0.05,
+    "agricola_pct": 32.07,
+    "bosque_pct": 60.5,
+    "urbana_pct": 45.92,
+    "mayor_ciudad_pct_urbana": 34.49
+   }
+  },
+  {
+   "iso": "ZWE",
+   "nombre": "Zimbabue",
+   "continente": "África",
+   "area_km2": 390757,
+   "poblacion": 16950795,
+   "pib_usd": 26538273499,
+   "pib_anio": 2023,
+   "suelo": {
+    "tierra_km2": 386850.0,
+    "arable_pct": 10.39,
+    "cultivo_permanente_pct": 0.12,
+    "agricola_pct": 48.06,
+    "bosque_pct": 35.72,
+    "urbana_pct": 40.5,
+    "mayor_ciudad_pct_urbana": 23.79
+   }
+  }
+ ]
+}
