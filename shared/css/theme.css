@@ -41,14 +41,14 @@
   --display-weight:800;
 
   /* ---------- Colores · tema claro ---------- */
-  --c-paper:#eef0ec;   /* fondo */
+  --c-paper:#ffffff;   /* fondo */
   --c-panel:#e2e7e1;   /* superficies, selección */
   --c-ink:#1c2420;     /* texto y contornos */
   --c-muted:#5a6862;   /* texto secundario */
   --c-rule:#c6cdc5;    /* líneas finas */
-  --c-home:#bf5419;    /* TU país: acento principal */
+  --c-home:#4ca9b1;    /* TU país: acento principal */
   --c-dot:#1c2420;     /* puntos de población del otro país */
-  --c-on-home:#ffffff; /* texto sobre el acento */
+  --c-on-home:#1c2420; /* texto sobre el acento (oscuro: el blanco no se lee sobre #4ca9b1) */
 
   /* Uso del suelo (ejercicio 02) */
   --c-crop:#e3d49b;    /* tierra cultivable */
@@ -60,14 +60,14 @@
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
     --c-paper:#131816; --c-panel:#1b2220; --c-ink:#e4eae5; --c-muted:#91a098;
-    --c-rule:#2d3733; --c-home:#f0894a; --c-dot:#dbe4de; --c-on-home:#131816;
+    --c-rule:#2d3733; --c-home:#4ca9b1; --c-dot:#dbe4de; --c-on-home:#131816;
     --c-crop:#4d4527; --c-pasture:#2f3427; --c-forest:#22322b;
     color-scheme:dark;
   }
 }
 :root[data-theme="dark"]{
   --c-paper:#131816; --c-panel:#1b2220; --c-ink:#e4eae5; --c-muted:#91a098;
-  --c-rule:#2d3733; --c-home:#f0894a; --c-dot:#dbe4de; --c-on-home:#131816;
+  --c-rule:#2d3733; --c-home:#4ca9b1; --c-dot:#dbe4de; --c-on-home:#131816;
   --c-crop:#4d4527; --c-pasture:#2f3427; --c-forest:#22322b;
   color-scheme:dark;
 }
