@@ -124,6 +124,19 @@ h3.sub{font-family:var(--f-display); font-size:20px; font-weight:700; margin:6px
 .land-legend{display:flex; flex-wrap:wrap; gap:6px 14px; font-size:13px; color:var(--c-muted)}
 .land-legend i{display:inline-block; width:12px; height:12px; border:1px solid var(--c-rule); margin-right:6px; vertical-align:-1px}
 .land-legend b{color:var(--c-ink); font-weight:500; font-family:var(--f-mono)}
+/* ---------- Retos (ejercicio 02) ---------- */
+.retos{display:flex; flex-direction:column; gap:8px}
+.retos .head{display:grid; grid-template-columns:1fr auto auto; gap:8px; font-family:var(--f-mono); font-size:11px; color:var(--c-muted); text-transform:uppercase; letter-spacing:.05em}
+.reto{display:grid; grid-template-columns:1fr auto; gap:3px 10px; font-size:13px}
+.reto .v{font-family:var(--f-mono); font-variant-numeric:tabular-nums; text-align:right}
+.reto .v.na{color:var(--c-muted)}
+.reto .track{grid-column:1/-1; height:6px; background:var(--c-panel); position:relative}
+.reto .track i{position:absolute; inset:0 auto 0 0; background:var(--c-ink)}
+.reto .track.home i{background:var(--c-home)}
+.reto .pair{grid-column:1/-1; display:grid; gap:3px}
+.swatch{display:inline-block; width:12px; height:12px; border:1px solid var(--c-rule); margin-right:6px; vertical-align:-1px}
+.swatch.urb{border:1.5px solid var(--c-ink)}
+.land-legend i.urb{border:1.5px solid var(--c-ink)}
 footer.sources{font-size:12px; color:var(--c-muted); border-top:1px solid var(--c-rule); padding-top:12px; margin-top:auto}
 
 /* ---------- Modo exportación (Reels / publicaciones) ---------- */

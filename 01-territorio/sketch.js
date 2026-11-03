@@ -24,8 +24,8 @@
 
   /* ---------- Estado ---------- */
   const P = OR.params();
-  // Herramientas de producción (Reels): solo visibles con ?herramientas=1
-  if (!P.herramientas) document.getElementById('toReel').hidden = true;
+  // Herramientas de producción (Reels): visibles con ?herramientas=1 o en la versión de estudio
+  if (!P.herramientas && !window.OR_ESTUDIO) document.getElementById('toReel').hidden = true;
   const S = {
     home: D.byIso[P.pais] || D.byIso[OR.store.get('home')] || D.byIso.ESP,
     other: D.byIso[P.comparar] || D.byIso.IND,

@@ -14,7 +14,7 @@
     const raw = window.__OR_DATA__ || await (await fetch(url || '../shared/data/countries.json')).json();
     const paises = raw.paises.map((c,i)=>({
       id:i, iso:c.iso, n:c.nombre, c:c.continente, a:c.area_km2, p:c.poblacion,
-      g:c.pib_usd, d:c.poblacion/c.area_km2, s:c.suelo||null
+      g:c.pib_usd, d:c.poblacion/c.area_km2, s:c.suelo||null, tr:c.territorio||null
     }));
     const byIso = Object.fromEntries(paises.map(c=>[c.iso,c]));
     const worldP = paises.reduce((t,c)=>t+c.p,0), worldG = paises.reduce((t,c)=>t+(c.g||0),0);
@@ -28,6 +28,7 @@
       paper:v('--c-paper'), panel:v('--c-panel'), ink:v('--c-ink'), muted:v('--c-muted'),
       rule:v('--c-rule'), home:v('--c-home'), dot:v('--c-dot'), onHome:v('--c-on-home'),
       crop:v('--c-crop'), pasture:v('--c-pasture'), forest:v('--c-forest'),
+      v:v,   /* lee cualquier otra variable: t.v('--c-city') */
       fDisplay:v('--f-display'), fBody:v('--f-body'), fMono:v('--f-mono'),
       stretch:parseFloat(v('--display-stretch'))||100, weight:v('--display-weight')||'800'
     };
@@ -175,6 +176,26 @@
 
   /* ---------- Utilidades ---------- */
   OR.pct = v => OR.nf(v, v<10?1:0)+'\u00a0%';
+  /* ---------- Treemap «squarified» (Bruls, Huizing y van Wijk, 2000) ----------
+     items: [{v, ...}] (se ordenan de mayor a menor). Devuelve [{x,y,w,h,item}]. */
+  OR.squarify = function(items, x, y, w, h){
+    const out=[], list=items.filter(it=>it.v>0).sort((a,b)=>b.v-a.v), total=list.reduce((a,b)=>a+b.v,0);
+    if (total<=0) return out;
+    const k=w*h/total; let rest=list.map(it=>({it, a:it.v*k}));
+    const worst=(row,side)=>{ let s=0,mx=0,mn=Infinity; row.forEach(r=>{s+=r.a; mx=Math.max(mx,r.a); mn=Math.min(mn,r.a);});
+      return Math.max(side*side*mx/(s*s), (s*s)/(side*side*mn)); };
+    while (rest.length){
+      const side=Math.min(w,h); let row=[rest[0]], i=1;
+      while (i<rest.length && worst([...row,rest[i]],side)<=worst(row,side)){ row.push(rest[i]); i++; }
+      const s=row.reduce((a,b)=>a+b.a,0);
+      if (w>=h){ const rw=s/h; let yy=y; row.forEach(r=>{ const rh=r.a/rw; out.push({x,y:yy,w:rw,h:rh,item:r.it}); yy+=rh; }); x+=rw; w-=rw; }
+      else     { const rh=s/w; let xx=x; row.forEach(r=>{ const rw=r.a/rh; out.push({x:xx,y,w:rw,h:rh,item:r.it}); xx+=rw; }); y+=rh; h-=rh; }
+      rest=rest.slice(i);
+    }
+    return out;
+  };
+  OR.rng = function(seedStr){ let h=0; for (const ch of seedStr) h=(h*31+ch.charCodeAt(0))|0; return rng(h); };
+
   OR.ease = t => t<.5 ? 4*t*t*t : 1-Math.pow(-2*t+2,3)/2;
   OR.clamp = (v,a,b)=>Math.max(a,Math.min(b,v));
   OR.reducedMotion = ()=>matchMedia('(prefers-reduced-motion: reduce)').matches;

@@ -50,10 +50,16 @@
   --c-dot:#1c2420;     /* puntos de población del otro país */
   --c-on-home:#1c2420; /* texto sobre el acento (oscuro: el blanco no se lee sobre #4ca9b1) */
 
-  /* Uso del suelo (ejercicio 02) */
-  --c-crop:#e3d49b;    /* tierra cultivable */
-  --c-pasture:#e6e6cf; /* pastos */
-  --c-forest:#c8d6c6;  /* bosque */
+  /* Ejercicio 02 · urbano */
+  --c-city:#4ca9b1;    /* ciudades */
+  --c-town:#b7dfe2;    /* pueblos y periferias */
+  /* Ejercicio 02 · rural (cobertura del suelo) */
+  --c-crop:#e8d68a;    /* cultivos */
+  --c-pasture:#dfe8b4; /* pastizal */
+  --c-forest:#a9c9a1;  /* bosque */
+  --c-shrub:#d4c59c;   /* matorral */
+  --c-desert:#f4e9d4;  /* desierto o suelo desnudo */
+  --c-icewater:#cfe2ec;/* hielo o agua */
 }
 
 /* ---------- Colores · tema oscuro ---------- */
@@ -61,13 +67,15 @@
   :root:not([data-theme="light"]){
     --c-paper:#131816; --c-panel:#1b2220; --c-ink:#e4eae5; --c-muted:#91a098;
     --c-rule:#2d3733; --c-home:#4ca9b1; --c-dot:#dbe4de; --c-on-home:#131816;
-    --c-crop:#4d4527; --c-pasture:#2f3427; --c-forest:#22322b;
+    --c-city:#4ca9b1; --c-town:#2a5558;
+    --c-crop:#6b5d2a; --c-pasture:#4a5530; --c-forest:#2f4a35; --c-shrub:#5a4f36; --c-desert:#3a352b; --c-icewater:#2c4450;
     color-scheme:dark;
   }
 }
 :root[data-theme="dark"]{
   --c-paper:#131816; --c-panel:#1b2220; --c-ink:#e4eae5; --c-muted:#91a098;
   --c-rule:#2d3733; --c-home:#4ca9b1; --c-dot:#dbe4de; --c-on-home:#131816;
-  --c-crop:#4d4527; --c-pasture:#2f3427; --c-forest:#22322b;
+  --c-city:#4ca9b1; --c-town:#2a5558;
+  --c-crop:#6b5d2a; --c-pasture:#4a5530; --c-forest:#2f4a35; --c-shrub:#5a4f36; --c-desert:#3a352b; --c-icewater:#2c4450;
   color-scheme:dark;
 }
