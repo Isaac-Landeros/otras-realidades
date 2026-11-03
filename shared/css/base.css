@@ -121,6 +121,8 @@ h3.sub{font-family:var(--f-display); font-size:20px; font-weight:700; margin:6px
 .stage-tag{position:sticky; top:0; z-index:2; display:flex; gap:8px; align-items:center;
   padding:8px 12px; background:var(--c-paper); border-bottom:1px solid var(--c-rule); font-size:13px}
 .stage-tag b{color:var(--c-home)}
+.stage-tag{cursor:pointer}
+.stage-tag u{color:var(--c-home); text-underline-offset:2px}
 .land-legend{display:flex; flex-wrap:wrap; gap:6px 14px; font-size:13px; color:var(--c-muted)}
 .land-legend i{display:inline-block; width:12px; height:12px; border:1px solid var(--c-rule); margin-right:6px; vertical-align:-1px}
 .land-legend b{color:var(--c-ink); font-weight:500; font-family:var(--f-mono)}

@@ -65,6 +65,13 @@
 
   // Animación (fotogramas a 60 fps en la web)
   const ANIM = {migrar:0.010, revelar:0.009, autoMigrarMs:1200};
+
+  // Rejilla del mundo: cómo destacar tu país frente al resto
+  const MUNDO = {
+    atenuar: 0.35,      // opacidad de los demás países (1 = sin atenuar)
+    grosorPropio: 5,    // grosor del contorno de tu país (px)
+    grosorResto: 1,     // grosor del contorno de los demás
+  };
   // Vídeo (fotogramas a 30 fps): cuándo empieza cada parte
   const F = {show:45, migrate:120, nums:300, close:420, end:510};
 
@@ -79,6 +86,9 @@
     lede:'En el ejercicio anterior los puntos se repartían por todo el territorio. En realidad hay ciudades, campos, bosques, desiertos y montañas, y la gente se concentra en muy poco espacio. El rectángulo con contorno es la superficie urbana real.',
     boton:['Ver dónde vive realmente','Ver reparto uniforme'],
     ayudaPrediccion:'A la derecha, tu predicción: el rectángulo turquesa con contorno es la superficie urbana; los puntos que caen dentro, la gente que vive en ciudades y pueblos.',
+    prediccionRural:'Rural (en tu predicción, sin clasificar)',
+    // Frase final del vídeo y de la imagen para compartir: a = tu país, b = el otro
+    cierre:(a,b)=>`En ${a.n}, el ${OR.pct(100*a.M.pu)} de la gente vive en el ${OR.pct(100*a.M.fu)} del territorio, mientras que en ${b.n}, el ${OR.pct(100*b.M.pu)} vive en el ${OR.pct(100*b.M.fu)}.`,
   };
 
   /* ==========================================================================
@@ -253,9 +263,10 @@
     }
     let y=box.y+box.h+(reel?60:28)*fs;
     if (f>=F.nums){
-      const rows=[['Territorio urbano', `${OR.pct(100*o.M.fu)} / ${OR.pct(100*h.M.fu)}`],
-                  ['Gente que vive ahí', `${OR.pct(100*o.M.pu)} / ${OR.pct(100*h.M.pu)}`]]
-        .concat(RETOS_VIDEO.map(k=>{ const r=RETOS.find(x=>x.k===k); return [r.label, `${fmtReto(r,o.M.R[k])} / ${fmtReto(r,h.M.R[k])}`]; }));
+      // Mismo orden que los cuadrados: tu país (izquierda) / el otro (derecha)
+      const rows=[['Territorio urbano', `${OR.pct(100*h.M.fu)} / ${OR.pct(100*o.M.fu)}`],
+                  ['Gente que vive ahí', `${OR.pct(100*h.M.pu)} / ${OR.pct(100*o.M.pu)}`]]
+        .concat(RETOS_VIDEO.map(k=>{ const r=RETOS.find(x=>x.k===k); return [r.label, `${fmtReto(r,h.M.R[k])} / ${fmtReto(r,o.M.R[k])}`]; }));
       const rh=(reel?70:50)*fs;
       rows.forEach((r,i)=>{
         ctx.globalAlpha=ph(F.nums+i*10, F.nums+i*10+20);
@@ -265,12 +276,12 @@
         y+=rh;
       });
       ctx.globalAlpha=ph(F.nums,F.nums+20);
-      OR.text(ctx, `${o.n} / ${h.n}`, W-m, y+2*fs, {t:th, font:'mono', size:18*fs, color:th.muted, align:'right', weight:400});
+      OR.text(ctx, `${h.n} / ${o.n}`, W-m, y+2*fs, {t:th, font:'mono', size:18*fs, color:th.muted, align:'right', weight:400});
       ctx.globalAlpha=1;
     }
     if (f>=F.close){
       ctx.globalAlpha=ph(F.close,F.close+20); y+=(reel?50:34)*fs;
-      OR.text(ctx, `En ${o.n}, el ${OR.pct(100*o.M.pu)} de la gente vive en el ${OR.pct(100*o.M.fu)} del territorio.`, m, y, {t:th, size:(reel?50:38)*fs, maxW:W-2*m, lh:1.05, color:th.home});
+      OR.text(ctx, TXT.cierre(h,o), m, y, {t:th, size:(reel?44:32)*fs, maxW:W-2*m, lh:1.08, color:th.home});
       ctx.globalAlpha=ph(F.close+20,F.close+40);
       OR.text(ctx, TXT.cta, m, H-m*0.9-20*fs, {t:th, font:'mono', size:20*fs, color:th.ink, weight:500});
       ctx.globalAlpha=1;
@@ -331,8 +342,10 @@
         list.forEach((c,i)=>{
           const x=(i%cols)*cw, y=Math.floor(i/cols)*ch, pd=10, bx=cw-2*pd, base=y+pd+bx, mine=c===h;
           if (c===S.other){ ctx.fillStyle=th.panel; ctx.fillRect(x+2,y+2,cw-4,ch-4); }
-          drawTree(ctx, layoutReal(c), x+pd, y+pd, bx, {th, stroke:mine?th.home:th.ink, lw:mine?3:1});
+          ctx.save(); if (!mine) ctx.globalAlpha=MUNDO.atenuar;
+          drawTree(ctx, layoutReal(c), x+pd, y+pd, bx, {th, stroke:mine?th.home:th.muted, lw:mine?MUNDO.grosorPropio:MUNDO.grosorResto});
           const pts=dotsReal(c); drawDots(ctx, pts, pts, 1, x+pd, y+pd, bx, cw<120?1.2:1.5, th.ink);
+          ctx.restore();
           ctx.save(); ctx.beginPath(); ctx.rect(x,base,cw,40); ctx.clip();
           OR.text(ctx, c.n, x+pd, base+5, {t:th, font:'body', size:cw<120?12:13, weight:700, color:mine?th.home:th.ink});
           OR.text(ctx, ord.show(c)+(mine?' · tu país':''), x+pd, base+22, {t:th, font:'mono', size:10.5, color:mine?th.home:th.muted, weight:400});
@@ -344,6 +357,9 @@
       if (S.scene==='reveal' && S.t<1){ S.t=Math.min(1,S.t+ANIM.revelar); busy=true; }
       busy?p.loop():p.noLoop();
     };
+    // Desplaza la rejilla hasta tu país
+    p.scrollToHome=()=>{ const i=cells.list.indexOf(S.home); if (i<0) return;
+      stage.scrollTo({top:Math.max(0, Math.floor(i/cells.cols)*cells.ch-20), behavior:OR.reducedMotion()?'auto':'smooth'}); };
     p.mousePressed=()=>{
       if (S.scene!=='world') return;
       if (p.mouseX<0||p.mouseY<0||p.mouseX>p.width||p.mouseY>p.height) return;
@@ -400,6 +416,7 @@
     $('ga').value=S.ga; $('gp').value=S.gp;
     $('gaOut').textContent=OR.pct(100*fu); $('gpOut').textContent=`${S.gp} de cada 100`;
     $('guessHelp').textContent=TXT.ayudaPrediccion;
+    $('guessLegend').innerHTML=URBANO.concat(RURAL).map(x=>`<span><i style="background:var(${x.col})"${URBANO.includes(x)?' class="urb"':''}></i>${x.label}</span>`).join('')+`<span><i style="background:var(--c-panel)"></i>${TXT.prediccionRural}</span>`;
     // comparación
     $('revealTitle').textContent=`${o.n} frente a ${h.n}`;
     const tol=PREDICCION;
@@ -410,7 +427,7 @@
       const msg=!S.guessed?'':Math.abs(d)<=tol.toleranciaPuntos?'Muy cerca.':d>0?`La realidad es ${OR.nf(d,0)} puntos más.`:`La realidad es ${OR.nf(-d,0)} puntos menos.`;
       return `<div class="line"><span class="k">Gente que vive ahí</span>${S.guessed?`<span class="g">${OR.pct(g)}</span>`:'<span></span>'}<span class="r">${OR.pct(r)}</span>${msg?`<span class="msg">${msg}</span>`:''}</div>`; };
     $('verdict').innerHTML = lineT()+lineP()+
-      `<div class="line"><span class="k">Personas por km² en lo urbano</span><span></span><span class="r">${OR.nf(o.M.dU)} <small>/ ${OR.nf(h.M.dU)}</small></span></div>`+
+      `<div class="line"><span class="k">Personas por km² en lo urbano</span><span></span><span class="r">${OR.nf(h.M.dU)} <small>/ ${OR.nf(o.M.dU)}</small></span><span class="msg small">${h.n} / ${o.n}</span></div>`+
       `<div class="land-legend">${legendHTML(o)}</div>`;
     $('cmpRetos').innerHTML=retosHTML(h,o);
     $('reflect').textContent=(prob?`Tu problema: «${prob}». `:`Piensa en un problema de ${h.n}. `)+
@@ -420,7 +437,7 @@
     $('worldLegend').textContent=`${h.n}: ${OR.pct(100*h.M.fu)} del territorio es urbano y ahí vive el ${OR.pct(100*h.M.pu)} de la gente. Su cuadrado tiene el contorno de color.`;
     $('worldLand').innerHTML=URBANO.concat(RURAL).map(x=>`<span><i style="background:var(${x.col})"${URBANO.includes(x)?' class="urb"':''}></i>${x.label}</span>`).join('');
     $('worldHelp').textContent=`${VISTAS[S.view].note} Toca un país para compararlo con ${h.n}.`;
-    $('stageTagText').innerHTML=`Comparando con <b>${h.n}</b> · ${OR.pct(100*h.M.fu)} urbano, ${OR.pct(100*h.M.pu)} de la gente`;
+    $('stageTagText').innerHTML=`Comparando con <b>${h.n}</b> · ${OR.pct(100*h.M.fu)} urbano, ${OR.pct(100*h.M.pu)} de la gente · <u>ir a ${h.n}</u>`;
   }
 
   function go(scene){
@@ -448,6 +465,7 @@
   ['ga','gp'].forEach(id=>$(id).addEventListener('input', e=>{ S[id]=+e.target.value; renderPanel(); app.redraw(); }));
   $('revealBtn').addEventListener('click', ()=>{ S.guessed=true; go('reveal'); });
   ['view','cont','sort'].forEach(id=>$(id).addEventListener('change', e=>{ S[id]=e.target.value; renderPanel(); app.fit(); }));
+  $('stageTag').addEventListener('click', ()=>app.scrollToHome());
   $('copyLink').addEventListener('click', ()=>OR.copy(OR.link({pais:S.home.iso, comparar:S.other.iso})));
   $('shareImg').addEventListener('click', ()=>{
     const c=document.createElement('canvas'); c.width=1080; c.height=1350;

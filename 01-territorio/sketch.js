@@ -124,7 +124,7 @@
       const rows = [
         ['Territorio', OR.times(rA()), S.guessed?`tú dijiste ${OR.times(gA())}`:''],
         ['Población', OR.times(rP()), S.guessed?`tú dijiste ${OR.times(gP())}`:''],
-        ['Personas por km²', `${OR.nf(o.d)} / ${OR.nf(h.d)}`, `${o.n} / ${h.n}`]
+        ['Personas por km²', `${OR.nf(h.d)} / ${OR.nf(o.d)}`, `${h.n} / ${o.n}`]
       ];
       rows.forEach((r,i)=>{
         ctx.globalAlpha = ph(F.nums+i*12, F.nums+i*12+20);
