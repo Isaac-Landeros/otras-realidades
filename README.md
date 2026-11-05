@@ -8,5 +8,6 @@ Ejercicios visuales interactivos para entender realidades de otros países: prim
 
 - **01 · Territorio y gente** — https://isaac-landeros.github.io/otras-realidades/01-territorio/
 - **02 · Dónde vive la gente** — https://isaac-landeros.github.io/otras-realidades/02-donde-vive/
+- **03 · La edad del país** — https://isaac-landeros.github.io/otras-realidades/03-edad/
 
-Datos: Banco Mundial (CC BY 4.0), Naciones Unidas, FMI, mledoze/countries (ODbL), Comisión Europea JRC · GHSL, FAOSTAT. Tipografías: Archivo e IBM Plex Mono (SIL OFL). p5.js (LGPL 2.1).
+Datos: Banco Mundial (CC BY 4.0), Naciones Unidas, FMI, mledoze/countries (ODbL), Comisión Europea JRC · GHSL, FAOSTAT, Naciones Unidas WPP 2024. Tipografías: Archivo e IBM Plex Mono (SIL OFL). p5.js (LGPL 2.1).

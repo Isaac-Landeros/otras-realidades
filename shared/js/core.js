@@ -14,7 +14,7 @@
     const raw = window.__OR_DATA__ || await (await fetch(url || '../shared/data/countries.json')).json();
     const paises = raw.paises.map((c,i)=>({
       id:i, iso:c.iso, n:c.nombre, c:c.continente, a:c.area_km2, p:c.poblacion,
-      g:c.pib_usd, d:c.poblacion/c.area_km2, s:c.suelo||null, tr:c.territorio||null
+      g:c.pib_usd, d:c.poblacion/c.area_km2, s:c.suelo||null, tr:c.territorio||null, ed:c.edades||null
     }));
     const byIso = Object.fromEntries(paises.map(c=>[c.iso,c]));
     const worldP = paises.reduce((t,c)=>t+c.p,0), worldG = paises.reduce((t,c)=>t+(c.g||0),0);

@@ -60,6 +60,12 @@
   --c-shrub:#d4c59c;   /* matorral */
   --c-desert:#f4e9d4;  /* desierto o suelo desnudo */
   --c-icewater:#cfe2ec;/* hielo o agua */
+  /* Ejercicio 03 · etapas de vida (cálidos = menores, frío = edad de trabajar, oscuro = mayores) */
+  --c-age-infancia:#f6d88f; /* 0–5 */
+  --c-age-escolar:#efb06e;  /* 6–17 */
+  --c-age-jovenes:#d98a62;  /* 18–24 */
+  --c-age-trabajo:#8fb1b8;  /* 25–64 */
+  --c-age-mayores:#355058;  /* 65+ */
 }
 
 /* ---------- Colores · tema oscuro ---------- */
@@ -69,6 +75,7 @@
     --c-rule:#2d3733; --c-home:#4ca9b1; --c-dot:#dbe4de; --c-on-home:#131816;
     --c-city:#4ca9b1; --c-town:#2a5558;
     --c-crop:#6b5d2a; --c-pasture:#4a5530; --c-forest:#2f4a35; --c-shrub:#5a4f36; --c-desert:#3a352b; --c-icewater:#2c4450;
+    --c-age-infancia:#e9c56e; --c-age-escolar:#d99552; --c-age-jovenes:#c0704c; --c-age-trabajo:#5d8790; --c-age-mayores:#b9cdd2;
     color-scheme:dark;
   }
 }
@@ -77,5 +84,6 @@
   --c-rule:#2d3733; --c-home:#4ca9b1; --c-dot:#dbe4de; --c-on-home:#131816;
   --c-city:#4ca9b1; --c-town:#2a5558;
   --c-crop:#6b5d2a; --c-pasture:#4a5530; --c-forest:#2f4a35; --c-shrub:#5a4f36; --c-desert:#3a352b; --c-icewater:#2c4450;
+  --c-age-infancia:#e9c56e; --c-age-escolar:#d99552; --c-age-jovenes:#c0704c; --c-age-trabajo:#5d8790; --c-age-mayores:#b9cdd2;
   color-scheme:dark;
 }
