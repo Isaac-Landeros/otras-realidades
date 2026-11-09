@@ -51,7 +51,8 @@
   // Predicción: valores iniciales y tolerancia (en personas de cada 100)
   const PREDICCION = {menoresInicial:30, mayoresInicial:10, tolerancia:4};
   // Rejilla del mundo: cómo destacar tu país
-  const MUNDO = {atenuar:0.35, grosorPropio:5};
+  // atenuar: opacidad de los demás países · atenuarComparado: el país con el que comparas (con fondo sombreado)
+  const MUNDO = {atenuar:0.35, atenuarComparado:0.8, grosorPropio:5};
   // Animación (fotogramas a 60 fps en la web)
   const ANIM = {llenar:0.012, revelar:0.012};
   // Vídeo (fotogramas a 30 fps): cuándo empieza cada parte
@@ -271,12 +272,13 @@
         list.forEach((c,i)=>{
           const x=(i%cols)*cw, y=Math.floor(i/cols)*ch, pd=12, bx=cw-2*pd, base=y+pd+bx, mine=c===h, A=cellsReal(c);
           if (c===S.other){ ctx.fillStyle=th.panel; ctx.fillRect(x+2,y+2,cw-4,ch-4); }
-          ctx.save(); if (!mine) ctx.globalAlpha=MUNDO.atenuar;
-          drawGrid(ctx, x+pd, y+pd, bx, A, A, {th, frame:mine?th.home:null, lw:MUNDO.grosorPropio, pad:5});
+          ctx.save(); ctx.globalAlpha = mine ? 1 : c===S.other ? MUNDO.atenuarComparado : MUNDO.atenuar;
+          const ins=mine?MUNDO.grosorPropio+3:0;
+          drawGrid(ctx, x+pd+ins, y+pd+ins, bx-2*ins, A, A, {th, frame:mine?th.home:null, lw:MUNDO.grosorPropio, pad:ins-MUNDO.grosorPropio/2});
           ctx.restore();
           ctx.save(); ctx.beginPath(); ctx.rect(x,base,cw,40); ctx.clip();
-          OR.text(ctx, c.n, x+pd, base+6, {t:th, font:'body', size:cw<120?12:13, weight:700, color:mine?th.home:th.ink});
-          OR.text(ctx, ord.show(c)+(mine?' · tu país':''), x+pd, base+23, {t:th, font:'mono', size:10.5, color:mine?th.home:th.muted, weight:400});
+          OR.text(ctx, mine?`${c.n} · tu país`:c.n, x+pd, base+6, {t:th, font:'body', size:cw<120?12:13, weight:700, color:mine?th.home:th.ink});
+          OR.text(ctx, ord.show(c), x+pd, base+23, {t:th, font:'mono', size:10.5, color:mine?th.home:th.muted, weight:400});
           ctx.restore();
         });
       }
@@ -290,6 +292,8 @@
 
   function worldList(){
     const arr=OK.filter(c=>VISTAS[S.view].f(c) && (!S.cont||c.c===S.cont)), ord=ORDEN.find(x=>x.k===S.sort);
+    // Tu país siempre aparece, aunque no esté en la vista o el continente elegidos
+    if (!arr.includes(S.home)) arr.push(S.home);
     if (!ord.f) arr.sort((a,b)=>OR.CONTS.indexOf(a.c)-OR.CONTS.indexOf(b.c)||b.p-a.p);
     else arr.sort((a,b)=>ord.f(b)-ord.f(a));
     return arr;
@@ -348,7 +352,8 @@
     $('worldHome').textContent=h.n;
     $('worldLegend').textContent=`${h.n}: mediana de ${OR.nf(h.E.edad_mediana,1)} años; ${h.cn[0]+h.cn[1]} de cada 100 son menores de 18 y ${h.cn[4]} tienen 65 o más. Su cuadrícula tiene el contorno de color.`;
     $('worldLegendColors').innerHTML=legendHTML(ETAPAS);
-    $('worldHelp').textContent=`${VISTAS[S.view].note} Toca un país para compararlo con ${h.n}.`;
+    const fuera = !VISTAS[S.view].f(h) || (S.cont && h.c!==S.cont);
+    $('worldHelp').textContent=`${VISTAS[S.view].note}${fuera?` ${h.n} no forma parte de esta selección; aparece para que puedas compararla.`:''} Toca un país para compararlo con ${h.n}.`;
     $('stageTagText').innerHTML=`Comparando con <b>${h.n}</b> · mediana ${OR.nf(h.E.edad_mediana,1)} años · <u>ir a ${h.n}</u>`;
   }
 

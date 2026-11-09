@@ -69,6 +69,7 @@
   // Rejilla del mundo: cómo destacar tu país frente al resto
   const MUNDO = {
     atenuar: 0.35,      // opacidad de los demás países (1 = sin atenuar)
+    atenuarComparado: 0.8, // opacidad del país con el que comparas (con fondo sombreado)
     grosorPropio: 5,    // grosor del contorno de tu país (px)
     grosorResto: 1,     // grosor del contorno de los demás
   };
@@ -353,13 +354,13 @@
         list.forEach((c,i)=>{
           const x=(i%cols)*cw, y=Math.floor(i/cols)*ch, pd=10, bx=cw-2*pd, base=y+pd+bx, mine=c===h;
           if (c===S.other){ ctx.fillStyle=th.panel; ctx.fillRect(x+2,y+2,cw-4,ch-4); }
-          ctx.save(); if (!mine) ctx.globalAlpha=MUNDO.atenuar;
+          ctx.save(); ctx.globalAlpha = mine ? 1 : c===S.other ? MUNDO.atenuarComparado : MUNDO.atenuar;
           drawTree(ctx, layoutReal(c), x+pd, y+pd, bx, {th, stroke:mine?th.home:th.muted, lw:mine?MUNDO.grosorPropio:MUNDO.grosorResto});
           const pts=dotsReal(c); drawDots(ctx, pts, pts, 1, x+pd, y+pd, bx, cw<120?1.2:1.5, th.ink);
           ctx.restore();
           ctx.save(); ctx.beginPath(); ctx.rect(x,base,cw,40); ctx.clip();
-          OR.text(ctx, c.n, x+pd, base+5, {t:th, font:'body', size:cw<120?12:13, weight:700, color:mine?th.home:th.ink});
-          OR.text(ctx, ord.show(c)+(mine?' · tu país':''), x+pd, base+22, {t:th, font:'mono', size:10.5, color:mine?th.home:th.muted, weight:400});
+          OR.text(ctx, mine?`${c.n} · tu país`:c.n, x+pd, base+5, {t:th, font:'body', size:cw<120?12:13, weight:700, color:mine?th.home:th.ink});
+          OR.text(ctx, ord.show(c), x+pd, base+22, {t:th, font:'mono', size:10.5, color:mine?th.home:th.muted, weight:400});
           ctx.restore();
         });
       }
@@ -376,6 +377,8 @@
 
   function worldList(){
     const arr=OK.filter(c=>VISTAS[S.view].f(c) && (!S.cont||c.c===S.cont)), ord=ORDEN.find(x=>x.k===S.sort);
+    // Tu país siempre aparece, aunque no esté en la vista o el continente elegidos
+    if (!arr.includes(S.home)) arr.push(S.home);
     if (!ord.f) arr.sort((a,b)=>OR.CONTS.indexOf(a.c)-OR.CONTS.indexOf(b.c)||b.p-a.p);
     else arr.sort((a,b)=>ord.f(b)-ord.f(a));
     return arr;
@@ -441,7 +444,8 @@
     $('worldHome').textContent=h.n;
     $('worldLegend').textContent=`${h.n}: ${OR.pct(100*h.M.fu)} del territorio es urbano y ahí vive el ${OR.pct(100*h.M.pu)} de la gente. Su cuadrado tiene el contorno de color.`;
     $('worldLand').innerHTML=URBANO.concat(RURAL).map(x=>`<span><i style="background:var(${x.col})"${URBANO.includes(x)?' class="urb"':''}></i>${x.label}</span>`).join('');
-    $('worldHelp').textContent=`${VISTAS[S.view].note} Toca un país para compararlo con ${h.n}.`;
+    const fuera = !VISTAS[S.view].f(h) || (S.cont && h.c!==S.cont);
+    $('worldHelp').textContent=`${VISTAS[S.view].note}${fuera?` ${h.n} no forma parte de esta selección; aparece para que puedas compararla.`:''} Toca un país para compararlo con ${h.n}.`;
     $('stageTagText').innerHTML=`Comparando con <b>${h.n}</b> · ${OR.pct(100*h.M.fu)} urbano, ${OR.pct(100*h.M.pu)} de la gente · <u>ir a ${h.n}</u>`;
   }
 
