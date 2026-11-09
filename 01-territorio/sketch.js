@@ -122,8 +122,9 @@
     let y = box.y+box.h+(reel?60:30)*fs;
     if (f>=F.nums){
       const rows = [
-        ['Territorio', OR.times(rA()), S.guessed?`tú dijiste ${OR.times(gA())}`:''],
-        ['Población', OR.times(rP()), S.guessed?`tú dijiste ${OR.times(gP())}`:''],
+        // El vídeo y la imagen para compartir no muestran la predicción («tú dijiste»): son para un público que no ha jugado
+        ['Territorio', OR.times(rA()), ''],
+        ['Población', OR.times(rP()), ''],
         ['Personas por km²', `${OR.nf(h.d)} / ${OR.nf(o.d)}`, `${h.n} / ${o.n}`]
       ];
       rows.forEach((r,i)=>{
