@@ -220,7 +220,18 @@
   const stage=$('stage'); let app;
   new p5(p=>{
     app=p; const cells={cols:1,cw:1,ch:1,list:[]};
-    p.setup=()=>{ p.createCanvas(stage.clientWidth, stage.clientHeight).parent(stage); p.frameRate(60); p.noLoop(); };
+    p.setup=()=>{ p.createCanvas(stage.clientWidth, stage.clientHeight).parent(stage); p.frameRate(60); p.noLoop();
+      // Clic en un país de la rejilla. Se escucha solo en el lienzo (no con p.mousePressed,
+    // que recibe clics de toda la página: la franja fija «ir a…» quedaba encima del lienzo
+    // y su clic se tomaba como un clic en el país de debajo).
+    p.canvas.addEventListener('click', ev=>{
+      if (S.scene!=='world') return;
+      const mx=ev.offsetX, my=ev.offsetY;
+      if (mx<0||my<0||mx>p.width||my>p.height) return;
+      const c=cells.list[Math.floor(my/cells.ch)*cells.cols+Math.floor(mx/cells.cw)];
+      if (c && c!==S.home){ S.other=c; S.guessed=false; go('reveal'); }
+    });
+    };
     p.fit=()=>{
       const W=stage.clientWidth; let H=stage.clientHeight-(S.scene==='world'?36:0);
       if (S.scene==='world'){
@@ -273,12 +284,6 @@
       if (S.scene==='home' && S.fill<1){ S.fill=Math.min(1,S.fill+ANIM.llenar); busy=true; }
       if (S.scene==='reveal' && S.t<1){ S.t=Math.min(1,S.t+ANIM.revelar); busy=true; }
       busy?p.loop():p.noLoop();
-    };
-    p.mousePressed=()=>{
-      if (S.scene!=='world') return;
-      if (p.mouseX<0||p.mouseY<0||p.mouseX>p.width||p.mouseY>p.height) return;
-      const c=cells.list[Math.floor(p.mouseY/cells.ch)*cells.cols+Math.floor(p.mouseX/cells.cw)];
-      if (c && c!==S.home){ S.other=c; S.guessed=false; go('reveal'); }
     };
   }, stage);
   new ResizeObserver(()=>app && app._setupDone && app.fit()).observe(stage);
